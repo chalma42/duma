@@ -1,0 +1,192 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("/fonts/roboto/Roboto.ttf"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+
+body {
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    color: #000000;
+    background: #F2F6F8;
+}
+/*Хедер*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 130px;
+}
+.logo-block {
+    width: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #247CCD;
+}
+.logo-block img {
+    width: auto;
+}
+.head-block {
+    width: calc(100% - 445px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+}
+.head-block__image {
+    margin-left: 25px;
+    margin-right: 35px;
+}
+.head-block__text {
+    font-size: 14px;
+    line-height: 16px;
+    border-left: 2px solid #247CCD;
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px;
+    margin: 0 35px;
+}
+.head-block__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.head-block__contacts a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding: 5px;
+}
+.head-block__telephone img {
+    margin-right: 13px;
+}
+.head-block__email img {
+    margin-right: 15px;
+}
+.head-block__twitter img {
+    margin-right: 8px;
+}
+/*конец хедер*/
+
+/*тело сайта*/
+.site-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    border: 1px solid blue;
+}
+/*Левая сторона*/
+.left-side {
+    background: #fff;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-side__search {
+    width: 284px;
+    height: 42px;
+    background: #F3F9FF;
+    border: 1px solid #A5CDF1;
+    box-sizing: border-box;
+    border-radius: 21px;
+    /*текст внутри*/
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767E86;
+    padding-left: 15px;
+    margin: 30px 0px;
+}
+.left-side__navigation {
+    width: 284px;
+}
+.left-side__navigation ul {
+    width: 100%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+.left-side__navigation ul li {
+    margin-bottom: 20px;
+}
+.left-side__navigation ul li a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+.deputat-left {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -46px;
+}
+.deputat-left img {
+    width: 186px;
+}
+.deputat-left__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 12px 0px;
+}
+.deputat-left__position {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+.left-side__contacts {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.left-side__contacts a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding: 5px;
+}
+.left-side__telephone img {
+    margin-right: 13px;
+}
+.left-side__email img {
+    margin-right: 15px;
+}
+.left-side__twitter img {
+    margin-right: 8px;
+}
+/*конец левой стороны*/
+
+
+
+
+
+main {
+    width: calc(100% - 445px);
+    border: 1px solid green;
+}
+/*конец тела сайта*/
