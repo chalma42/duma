@@ -137,6 +137,7 @@ header {
     align-items: center;
     position: relative;
     left: -46px;
+    margin-top: 30px;
 }
 .deputat-left img {
     width: 186px;
@@ -181,10 +182,7 @@ header {
 }
 /*конец левой стороны*/
 
-
-
-
-
+/**/
 main {
     width: calc(100% - 445px);
     border: 1px solid green;
