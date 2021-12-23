@@ -3,8 +3,8 @@
     src: url("/fonts/roboto/Roboto.ttf"); 
     font-style: normal; 
     font-weight: normal; 
-    } 
-
+    font-display: swap;
+} 
 
 body {
     margin: 0;
@@ -77,6 +77,10 @@ header {
 }
 /*конец хедер*/
 
+.main {
+    padding-left: 445px;
+}
+
 /*тело сайта*/
 .site-body {
     display: flex;
@@ -85,6 +89,7 @@ header {
 }
 /*Левая сторона*/
 .left-side {
+    position: fixed;
     background: #fff;
     width: 445px;
     display: flex;
@@ -181,8 +186,50 @@ header {
 }
 /*конец левой стороны*/
 
-/**/
+/*main*/
 main {
     width: calc(100% - 445px);
 }
+.main-slider {
+    max-width: 1356px;
+}
+.main-slider__item {
+    position: relative;
+}
+.main-slider__info {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 40%;
+    height: 100%; 
+}
+.main-slider__text {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    color: #247CCD;
+}
+.main-slider__button {
+    position: relative;
+    width: 186px;
+    height: 49px;
+    background: #247CCD;
+    border-radius: 25px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.main-slider__button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.main-slider__button:active {
+    bottom: -5px;
+}
+/*конец main*/
+
+
 /*конец тела сайта*/
