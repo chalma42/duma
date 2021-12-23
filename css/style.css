@@ -50,7 +50,7 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 12px;
-    margin: 0 35px;
+    margin: 0 48px;
 }
 .head-block__contacts {
     display: flex;
@@ -82,7 +82,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    border: 1px solid blue;
 }
 /*Левая сторона*/
 .left-side {
@@ -185,6 +184,5 @@ header {
 /**/
 main {
     width: calc(100% - 445px);
-    border: 1px solid green;
 }
 /*конец тела сайта*/
