@@ -61,7 +61,7 @@
     </div>
 
     <main class="main"> 
-        <!-- <h1 class="sr-only"></h1> -->
+        <h1 class="sr-only">Ульяновская городская дума</h1>
         <section class="swiper main-slider">
             <div class="swiper-wrapper">
                 <div class="main-slider__item swiper-slide">
@@ -92,23 +92,53 @@
         </section>
         <section class="content-list">
             <div class="content-list__tab">
-                <button class="content-list__link" onclick="openTab(event, 'news')">Новости</button>
+                <button class="content-list__link active" onclick="openTab(event, 'news')">Новости</button>
                 <button class="content-list__link" onclick="openTab(event, 'advertising')">Объявления</button>
                 <button class="content-list__link" onclick="openTab(event, 'invitation')">Приглашения для СМИ</button>
             </div>
             <div id="news" class="content-list__content">
-                <h3>Новости</h3>
-                <p>London is the capital city of England.</p>
+                <h2 class="sr-only">Новости</h2>
+                <ul class="news-list">
+                    <li class="news-list__item">
+                        <a href="#" class="news-list__link"><img src="img/pages/main/food.jpg" alt="" class="news-list__image"></a>
+                        <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
+                        <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
+                        <p><time datetime="2021-11-06">06.11.2021</time></p>
+                    </li>
+                    <li class="news-list__item">
+                        <a href="#" class="news-list__link"><img src="img/pages/main/bus.jpg" alt="" class="news-list__image"></a>
+                        <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
+                        <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
+                        <p><time datetime="2021-11-06">06.11.2021</time></p>
+                    </li>
+                    <li class="news-list__item">
+                        <a href="#" class="news-list__link"><img src="img/pages/main/bridge.jpg" alt="" class="news-list__image"></a>
+                        <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
+                        <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
+                        <p><time datetime="2021-11-06">06.11.2021</time></p>
+                    </li>
+                </ul>
             </div>
             
             <div id="advertising" class="content-list__content">
                 <h3>Объявления</h3>
-                <p>Paris is the capital of France.</p>
             </div>
             
             <div id="invitation" class="content-list__content">
                 <h3>Приглашения для СМИ</h3>
-                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </section>
+        <section class="main-video">
+            <div class="main-video__block">
+                <a class="main-video__link" href="https://youtu.be/_UErYfHC_dc">
+                    <picture>
+                        <source srcset="https://i.ytimg.com/vi_webp/_UErYfHC_dc/maxresdefault.webp" type="image/webp">
+                        <img class="main-video__media" src="https://i.ytimg.com/vi/_UErYfHC_dc/maxresdefault.jpg" alt="">
+                    </picture>
+                </a>
+                <button class="main-video__button" aria-label="Запустить видео">
+                    <svg class="main-video__button-icon" xmlns="http://www.w3.org/2000/svg" height="800" width="1200" viewBox="-35.20005 -41.33325 305.0671 247.9995"><path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85" /><path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/></svg>
+                </button>
             </div>
         </section>
     </main>
@@ -117,5 +147,6 @@
 <script src="js/swiper/swiper-bundle.min.js"></script>
 
 <script src="js/script.js"></script>
+<script src="js/video.js"></script>
 </body>
 </html>
