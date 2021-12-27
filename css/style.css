@@ -42,6 +42,7 @@ header {
     margin-right: 35px;
 }
 .head-block__text {
+    max-width: 230px;
     font-size: 14px;
     line-height: 16px;
     border-left: 2px solid #247CCD;
@@ -50,7 +51,7 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 12px;
-    margin: 0 48px;
+    margin: 0 40px;
 }
 .head-block__contacts {
     display: flex;
