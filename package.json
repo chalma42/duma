@@ -15,5 +15,12 @@
     "url": "https://github.com/chalma42/duma/issues"
   },
   "homepage": "https://github.com/chalma42/duma#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.4"
+  }
 }
