@@ -3,6 +3,7 @@ const { src, dest, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
+const uglify = require('gulp-uglify-es').default;
 
 function browsersync() {
     browserSync.init({
@@ -10,6 +11,13 @@ function browsersync() {
             baseDir: "app/"
         }
     });
+}
+
+function scripts() {
+    return src([
+        '',
+        'main.js'
+    ])
 }
 
 
