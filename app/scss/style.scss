@@ -1,10 +1,13 @@
 body {
-    color: yellow;
+    color: green;
     padding: 0;
     font-size: 32px;
     margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: 20px;
+    background-color: gray;
 }
 
