@@ -83,4 +83,4 @@ exports.cleanDist = cleanDist;
 
 exports.build = series(cleanDist, images, build); //выгрузка всего проекта, в cmd gulp build
 
-exports.default = parallel(styles, browsersync, watching);
+exports.default = parallel(styles, scripts, browsersync, watching);
