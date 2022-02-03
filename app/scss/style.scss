@@ -1,13 +1,671 @@
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/roboto/Roboto.woff2"); 
+    font-style: normal; 
+    font-weight: normal; 
+    font-display: swap;
+} 
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/roboto/Robotobold.woff2"); 
+    font-style: normal; 
+    font-weight: bold; 
+    font-display: swap;
+} 
 body {
-    color: green;
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    color: #000000;
+    background: #F2F6F8;
+}
+h2 {
+    color: #247CCD;
+}
+ul {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.sr-only {
+    position: absolute;
+    margin: -1px;
     padding: 0;
-    font-size: 32px;
-    margin-left: 20px;
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+/*Хедер*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 130px;
+}
+.logo-block {
+    width: 445px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #247CCD;
+}
+.logo-block img {
+    width: auto;
+}
+.head-block {
+    width: calc(100% - 445px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff;
+}
+.head-block__image {
+    margin-left: 25px;
+    margin-right: 35px;
+}
+.head-block__list {
+    width: 100%;
+    max-width: 995px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head-block__text {
+    max-width: 230px;
+    font-size: 14px;
+    line-height: 16px;
+    border-left: 2px solid #247CCD;
+    min-height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px;
+    margin: 0 40px;
+}
+.head-block__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.head-block__contacts a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding: 5px;
+}
+.head-block__telephone::before {
+    content: url(../img/icons/phone.svg);
+    margin-right: 13px;
+}
+.head-block__email::before {
+    content: url(../img/icons/email.svg);
+    margin-right: 15px;
+}
+.head-block__twitter::before {
+    content: url(../img/icons/twitter.svg);
+    margin-right: 8px;
+}
+/*конец хедер*/
+
+/*тело сайта*/
+.site-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+/*Левая сторона*/
+.left-side {
+    background: #fff;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.left-side__search {
+    width: 284px;
+    height: 42px;
+    background: #F3F9FF;
+    border: 1px solid #A5CDF1;
     box-sizing: border-box;
-    border-bottom: 20px;
-    background-color: gray;
+    border-radius: 21px;
+    /*текст внутри*/
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767E86;
+    padding-left: 15px;
+    margin: 30px 0px;
+}
+.left-side__navigation {
+    width: 284px;
+}
+.left-side__navigation ul {
+    width: 100%;
+}
+.left-side__navigation ul li {
+    margin-bottom: 20px;
+}
+.left-side__navigation ul li a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+.deputat-left {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    left: -46px;
+    margin-top: 30px;
+}
+.deputat-left img {
+    width: 186px;
+}
+.deputat-left__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    margin: 12px 0px;
+}
+.deputat-left__position {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+}
+.left-side__contacts {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+.left-side__contacts a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding: 5px;
 }
 
+.left-side__telephone::before {
+    content: url(../img/icons/phone.svg);
+    margin-right: 13px;
+}
+.left-side__email::before {
+    content: url(../img/icons/email.svg);
+    margin-right: 15px;
+}
+.left-side__twitter::before {
+    content: url(../img/icons/twitter.svg);
+    margin-right: 8px;
+}
+/*конец левой стороны*/
+
+/*main*/
+main {
+    width: calc(100% - 445px);
+}
+.main-slider {
+    max-width: 1356px;
+    margin-left: 0 !important;
+    margin-bottom: 50px;
+}
+.main-slider__item {
+    position: relative;
+}
+.main-slider__info {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 40%;
+    height: 100%; 
+}
+.main-slider__text {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 48px;
+    color: #247CCD;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.main-slider__button {
+    position: relative;
+    width: 186px;
+    height: 49px;
+    background: #247CCD;
+    border-radius: 25px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    color: #FFFFFF;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.main-slider__button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.main-slider__button:active {
+    bottom: -5px;
+}
+
+/*Табы*/
+.content-list {
+    width: 100%;
+    max-width: 1356px;
+    margin-bottom: 80px;
+}
+.content-list__tab,
+.my-deputat__tab {
+    overflow: hidden;
+}
+.content-list__tab button,
+.my-deputat__tab button {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 0px;
+    transition: 0.3s;
+}
+.content-list__tab button:first-child,
+.my-deputat__tab button:first-child {
+    margin-left: 35px;
+}
+.content-list__tab button:hover,
+.my-deputat__tab button:hover {
+    color: blue;
+}
+.content-list__tab button.active,
+.my-deputat__tab button.active {
+    font-weight: bold;
+}
+.content-list__content,
+.my-deputat__content {
+    display: none;
+    width: 100%;
+    min-height: 552px;
+}
+#advertising,
+#invitation {
+    background-color: #c5c5c5;
+    margin-left: 35px;
+    width: calc(100% - 35px);
+}
+.content-list__content:first-child {
+    display: block;
+}
+.news-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: 35px;
+}
+.news-list__item {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.news-list__image {
+    width: 100%;
+}
+.news-list__link {
+    width: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+.news-list__link:nth-child(2) {
+    margin-bottom: 20px;
+}
+.news-list__link:hover {
+    color: red;
+}
+.news-list__title {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+.news-list__item time {
+    font-size: 12px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/*видео на главной*/
+.main-video {
+    width: 100%;
+    max-width: 1356px;
+}
+.main-video__title {
+    font-weight: bold;
+    font-size: 42px;
+    margin-left: 35px;
+}
+.main-video__block {
+    position: relative;
+    width: calc(100% - 35px);
+    height: 0;
+    padding-bottom: 56.25%;
+    background-color: #000000;
+    margin-left: 35px;
+}
+.main-video__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.main-video__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 136px;
+    height: 96px;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.main-video__button-icon {
+    width: 100%;
+    height: auto;
+    fill: #212121;
+    fill-opacity: 0.8;
+}
+.main-video__block:hover .main-video__button-icon,
+.main-video__button:focus .main-video__button-icon {
+    fill: red;
+    fill-opacity: 1;
+}
+.video--enabled {
+    cursor: pointer;
+}
+.video--enabled .main-video__button {
+    display: block;
+}
+
+/*Эволюция города*/
+.evolution {
+    width: 100%;
+    max-width: 1356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.evlution__title {
+    font-size: 36px;
+    line-height: 48px; 
+    margin-left: 35px;
+}
+.evolution__body {
+    width: calc(100% - 35px);
+    margin-left: 35px;
+    border: 1px soldi red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.evolution__ranges {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.evolution__range-block,
+.history__range-block {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.history__range-block {
+    width: calc(100% - 35px);
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+.evolution__range-title,
+.history__range-title {
+    font-size: 16px;
+    line-height: 36px;
+    color: #247CCD;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 100%;
+  }
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: #D1DFEC;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 40px;
+    width: 30px;
+    background: #EFF7FC;
+    box-shadow: 0px 0px 4px 1px rgba(59, 120, 175, 0.62), inset 0px 0px 2px 1px #FFFFFF, inset 0px 0px 8px rgba(112, 138, 186, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -18px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #D1DFEC;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #D1DFEC;
+    border-radius: 3px;
+
+}
+input[type=range]::-moz-range-thumb {
+    height: 40px;
+    width: 30px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height:3px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #3071a9;
+    border-radius: 3px;
+}
+input[type=range]::-ms-thumb {
+    height: 40px;
+    width: 30px;
+    background: #EFF7FC;
+    box-shadow: 0px 0px 4px 1px rgba(59, 120, 175, 0.62), inset 0px 0px 2px 1px #FFFFFF, inset 0px 0px 8px rgba(112, 138, 186, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #367ebd;
+}
+.evolution__years-block,
+.opacity__years-block,
+.history__years-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.evolution__years-block span,
+.opacity__years-block span,
+.history__years-block span {
+    font-size: 18px;
+    line-height: 21px;
+}
+.evolution__range-block.opacity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.opacity__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 49px;
+    left: 1140px;
+    top: 2455px;
+    border: 1px solid #247CCD;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #247CCD;
+    background-color: transparent;
+}
+.opacity__block {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.evolution-map {
+    width: 100%;
+}
+
+/*Из истории города*/
+.history {
+    width: 100%;
+}
+
+/*конец main*/
+.history {
+    width: 100%;
+    max-width: 1356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.history__title {
+    font-size: 36px;
+    margin-left: 35px;
+}
+.history__body {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+}
+.history__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.history__item {
+    position: relative;
+    width: 30%;
+}
+.history__year {
+    position: absolute;
+    top: -35px;
+    left: -35px;
+    font-weight: bold;
+    font-size: 72px;
+    color: #585C5F;
+}
+.history__img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.history__name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #247CCD;
+}
+.history__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    text-align: justify;
+}
+
+/*кто мой депутат*/
+.my-deputat {
+    width: 100%;
+    max-width: 1356px;
+}
+.my-deputat__title {
+    font-size: 42px;
+    margin-left: 35px;
+}
+.my-deputat__body {
+    width: calc(100% - 35px);
+    margin-left: 35px;
+}
+
+
+/*конец тела сайта*/

@@ -36,11 +36,11 @@ function images() {
 
 function scripts() {
     return src([
-        //'app/js/swiper-bundle.min.js',
-        'app/js/main.js'
+        'app/js/video.js',
+        'app/js/script.js'
     ])
-    //.pipe(concat('main.min.js'))
-    .pipe(uglify())
+    .pipe(concat('script.min.js'))
+    //.pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
@@ -70,7 +70,7 @@ function build() {
 
 function watching() {
     watch(['app/scss/**/*.scss'], styles)
-    watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
+    watch(['app/js/**/*.js', '!app/js/script.min.js'], scripts)
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 
@@ -81,6 +81,6 @@ exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 
-exports.build = series(cleanDist, images, build); //выгрузка всего проекта
+exports.build = series(cleanDist, images, build); //выгрузка всего проекта, в cmd gulp build
 
-exports.default = parallel(styles, browsersync, watching, images);
+exports.default = parallel(styles, browsersync, watching);
