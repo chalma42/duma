@@ -1011,6 +1011,13 @@ input[type=range]:focus::-ms-fill-upper {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.my-deputat__item a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 .my-deputat__image {
   margin-bottom: 20px;
 }
@@ -1019,27 +1026,31 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  margin-bottom: 10px;
+}
+
+.my-deputat__name:hover {
+  text-decoration: underline;
+  color: red;
 }
 
 .my-deputat__post {
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
-  text-align: center;
-  margin-bottom: 15px;
+}
+
+.my-deputat__post:hover {
+  text-decoration: underline;
+  color: red;
 }
 
 .my-deputat__district {
   font-size: 12px;
-  text-align: center;
   margin-bottom: 10px;
 }
 
 .my-deputat__email {
   font-size: 14px;
-  text-align: center;
   color: #247CCD;
   text-decoration: none;
   -webkit-transition: all 0.3s;
@@ -1077,11 +1088,189 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 20px;
 }
 
+/*Страница депутата*/
+.deputat {
+  width: calc(100% - 35px);
+  margin-left: 35px;
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.deputat__name {
+  font-weight: bold;
+  font-size: 42px;
+  color: #247CCD;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  margin-bottom: 20px;
+}
+
+.deputat__subtitle {
+  font-size: 16px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.deputat__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.deputat__image {
+  width: auto;
+  max-width: 100%;
+}
+
+.deputat__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px 35px;
+}
+
+.deputat__contacts-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.deputat__contacts-list {
+  margin-bottom: 40px;
+}
+
+.deputat__contacts-district,
+.deputat__contacts-twitter,
+.deputat__contacts-email,
+.deputat__contacts-phone {
+  font-weight: bold;
+  font-size: 14px;
+  color: #247CCD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.deputat__contacts-district::before {
+  content: url("../img/pages/deputats/geo_blue.png");
+  margin-right: 15px;
+}
+
+.deputat__contacts-twitter a,
+.deputat__contacts-email a,
+.deputat__contacts-phone a {
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 14px;
+  color: #247CCD;
+}
+
+.deputat__contacts-twitter::before {
+  content: url("../img/pages/deputats/twit_blue.png");
+  margin-right: 10px;
+}
+
+.deputat__contacts-email::before {
+  content: url("../img/pages/deputats/mail_blue.png");
+  margin-right: 15px;
+}
+
+.deputat__contacts-phone::before {
+  content: url("../img/pages/deputats/phone_blue.png");
+  margin-right: 15px;
+}
+
+.deputat__feed-btn {
+  width: 168px;
+  height: 38px;
+  background: #247CCD;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  color: #FFFFFF;
+  border: 0px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.deputat__feed-btn:hover {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.deputat__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #ffffff;
+}
+
 /*конец тела сайта*/
 /*Футер*/
 .footer {
   width: 100%;
   background: #232527;
+  padding-top: 30px;
 }
 
 .footer__body {
