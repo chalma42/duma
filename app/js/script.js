@@ -11,9 +11,16 @@ const swiper = new Swiper('.swiper', {
   });
   
 //Открываем вкладку новости по умолчанию
-document.querySelector('#news').style.display = "block";
-//
-document.querySelector('#deputats').style.display = "block";
+const news = document.querySelector('#news');
+if(news) {
+  news.style.display = "block"
+}
+//Открываем первые вкладку депутатов
+const deputats = document.querySelector('#deputats');
+if(deputats) {
+  deputats.style.display = "block"
+}
+
 //Открываем табы
 function openTab(evt, value) {
   let i;
@@ -51,3 +58,17 @@ console.log(year);
 currentYear.forEach(element => {
   element.textContent = year.getFullYear();
 });
+
+//О депутате, открыть полную информацию
+const more = document.querySelector('#about__more');
+
+more.onclick = function() {
+  //document.querySelector('.deputat__about').classList.add('open');
+  document.querySelector('.deputat__about').classList.toggle('open')
+  if(document.querySelector('.deputat__about').classList.contains('open')) {
+    more.innerHTML = 'Свернуть';
+  } else {
+    more.innerHTML = 'Показать';
+  }
+  
+}

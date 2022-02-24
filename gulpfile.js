@@ -22,7 +22,7 @@ function images() {
     return src('app/img/**/*')
         .pipe(imagemin([
             imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.mozjpeg({quality: 95, progressive: true}),
             imagemin.optipng({optimizationLevel: 5}),
             imagemin.svgo({
                 plugins: [
@@ -60,7 +60,7 @@ function styles() {
 
 function build() {
     return src([
-        'app/css/style.css',
+        'app/css/**/*',
         'app/fonts/**/*',
         'app/js/**/*.js',
         'app/*.html',

@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Сайт думы"> 
-	<meta name="Keywords" content="Ульяновская дума">
-    <title>Дума</title>
+	<meta name="description" content="Депутаты"> 
+	<meta name="Keywords" content="Депутаты">
+    <title>Депутаты</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--Swiper Slider-->
-    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header>
@@ -40,7 +39,7 @@
             <nav class="left-side__navigation">
                 <ul>
                     <li><a href="#" rel="noopener">О Думе</a></li>
-                    <li><a href="deputats.html" rel="noopener">Депутаты</a></li>
+                    <li><a href="#" rel="noopener">Депутаты</a></li>
                     <li><a href="#" rel="noopener">Деятельность</a></li>
                     <li><a href="#" rel="noopener">Приёмная</a></li>
                     <li><a href="#" rel="noopener">Комитеты</a></li>
@@ -61,149 +60,10 @@
         </div>
     
         <main class="main"> 
-            <h1 class="sr-only">Ульяновская городская дума</h1>
-            <section class="swiper main-slider">
-                <div class="swiper-wrapper">
-                    <div class="main-slider__item swiper-slide">
-                        <img data-src="img/main_slider/1.jpg" alt="" class="swiper-lazy">
-                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        <div class="main-slider__info" >
-                            <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
-                        </div>
-                    </div>
-                    <div class="main-slider__item swiper-slide">
-                        <img data-src="img/main_slider/1.jpg" alt="" class="swiper-lazy">
-                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        <div class="main-slider__info" >
-                            <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
-                        </div>
-                    </div>
-                    <div class="main-slider__item swiper-slide">
-                        <img data-src="img/main_slider/1.jpg" alt="" class="swiper-lazy">
-                        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                        <div class="main-slider__info" >
-                            <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
-                        </div>
-                    </div>
-                </div>
+            <section class="deputat">
+                <h1 class="deputat__name">Депутаты</h1>
             </section>
-            <section class="content-list">
-                <div class="content-list__tab">
-                    <button class="content-list__link active" onclick="openTab(event, 'news')">Новости</button>
-                    <button class="content-list__link" onclick="openTab(event, 'advertising')">Объявления</button>
-                    <button class="content-list__link" onclick="openTab(event, 'invitation')">Приглашения для СМИ</button>
-                </div>
-                <div id="news" class="content-list__content">
-                    <h2 class="sr-only">Новости</h2>
-                    <ul class="news-list">
-                        <li class="news-list__item">
-                            <a href="#" class="news-list__link"><img src="img/pages/main/food.jpg" alt="" class="news-list__image"></a>
-                            <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
-                            <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
-                            <p><time datetime="2021-11-06">06.11.2021</time></p>
-                        </li>
-                        <li class="news-list__item">
-                            <a href="#" class="news-list__link"><img src="img/pages/main/bus.jpg" alt="" class="news-list__image"></a>
-                            <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
-                            <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
-                            <p><time datetime="2021-11-06">06.11.2021</time></p>
-                        </li>
-                        <li class="news-list__item">
-                            <a href="#" class="news-list__link"><img src="img/pages/main/bridge.jpg" alt="" class="news-list__image"></a>
-                            <a href="#" class="news-list__link">Проблему транспортной доступности в поселке Мостостроителей планируют решить в 2022 году</a>
-                            <p class="news-list__title">Этот вопрос обсудили на встрече жителей с депутатом по округу Игорем Булановым, представителями Управления дорожного хозяйства и транспорта администрации города Ульяновска и другими...</p>
-                            <p><time datetime="2021-11-06">06.11.2021</time></p>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div id="advertising" class="content-list__content">
-                    <h3>Объявления</h3>
-                </div>
-                
-                <div id="invitation" class="content-list__content">
-                    <h3>Приглашения для СМИ</h3>
-                </div>
-            </section>
-            <section class="main-video">
-                <h2 class="main-video__title">Ульяновск — авиационная столица РФ</h2>
-                <div class="main-video__block">
-                    <a class="main-video__link" href="https://youtu.be/_UErYfHC_dc">
-                        <picture>
-                            <source srcset="https://i.ytimg.com/vi_webp/_UErYfHC_dc/maxresdefault.webp" type="image/webp">
-                            <img class="main-video__media" src="https://i.ytimg.com/vi/_UErYfHC_dc/maxresdefault.jpg" alt="">
-                        </picture>
-                    </a>
-                    <button class="main-video__button" aria-label="Запустить видео">
-                        <svg class="main-video__button-icon" xmlns="http://www.w3.org/2000/svg" height="800" width="1200" viewBox="-35.20005 -41.33325 305.0671 247.9995"><path d="M229.763 25.817c-2.699-10.162-10.65-18.165-20.748-20.881C190.716 0 117.333 0 117.333 0S43.951 0 25.651 4.936C15.553 7.652 7.6 15.655 4.903 25.817 0 44.236 0 82.667 0 82.667s0 38.429 4.903 56.85C7.6 149.68 15.553 157.681 25.65 160.4c18.3 4.934 91.682 4.934 91.682 4.934s73.383 0 91.682-4.934c10.098-2.718 18.049-10.72 20.748-20.882 4.904-18.421 4.904-56.85 4.904-56.85s0-38.431-4.904-56.85" /><path d="M93.333 117.559l61.333-34.89-61.333-34.894z" fill="#fff"/></svg>
-                    </button>
-                </div>
-            </section>
-            <section class="evolution">
-                <h2 class="evlution__title">Эволюция города</h2>
-                <div class="evolution__body">
-                    <div class="evolution__ranges">
-                        <div class="evolution__range-block">
-                            <span class="evolution__range-title">Исторический период</span>
-                            <input class="evolution__range"  type="range" min="1648" max="2022" value="1700" name="range" step="1" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
-                            <div class="evolution__years-block">
-                                <span id="evolution__years-start">1700</span>
-                                <span class="current-year"></span>
-                            </div>
-                        </div>
-                        <div class="evolution__range-block opacity">
-                            <button class="opacity__button">Наложить современную карту</button>
-                            <div class="opacity__block">
-                                <span class="evolution__range-title">Прозрачность</span>
-                                <input class="opacity__range"  type="range" min="0" max="100" value="50" name="range" step="1" oninput="document.querySelector('#opacity__years-start').textContent = this.value;"/>
-                                <div class="opacity__years-block">
-                                    <span id="opacity__years-start">50</span>
-                                    <span>100</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="evolution-map" src="img/pages/main/evolution.jpg" alt="">
-                </div>
-            </section>
-            <section class="history">
-                <h2 class="history__title">Из истории города</h2>
-                <div class="history__range-block">
-                    <span class="history__range-title">Исторический период</span>
-                    <input class="history__range"  type="range" min="1648" max="2022" value="1648" name="range" step="1" oninput="document.querySelector('#history__years-start').textContent = this.value;"/>
-                    <div class="history__years-block">
-                        <span id="history__years-start">1648</span>
-                        <span class="current-year"></span>
-                    </div>
-                </div>
-                <div class="history__body">
-                    <ul class="history__list">
-                        <li class="history__item">
-                            <span class="history__year">1648</span>
-                            <img class="history__img" src="img/pages/main/1648.jpg" alt="" title="">
-                            <span class="history__name">Основание Симбирска</span>
-                            <p class="history__text">В 1648 году, для исполнения Указа царя Алексея Михайловича боярин Богдан Хитров приступил к строительству города в междуречье Волги и Свияги. Стратегически место для города было выбрано очень удачно — восточную сторону защищала естественная преграда Волга с крутым берегом, подниматься по которому было очень неудобно и опасно.</p>
-                        </li>
-                        <li class="history__item">
-                            <span class="history__year">1670</span>
-                            <img class="history__img" src="img/pages/main/1670.jpg" alt="" title="">
-                            <span class="history__name">Осада Симбирска С. Разиным</span>
-                            <p class="history__text">Сражение у Симбирска между мятежниками под предводительством Степана Разина и правительственным войском во главе с князем Юрием Барятинским, закончившееся крупным поражением Разина и его бегством на Дон.</p>
-                        </li>
-                        <li class="history__item">
-                            <span class="history__year">1672</span>
-                            <img class="history__img" src="img/pages/main/1672.jpg" alt="" title="">
-                            <span class="history__name">Герб Синбирска</span>
-                            <p class="history__text">За двукратную храбрую оборону от разбойника Стеньки Разина Синбирску был пожалован первый герб. В 1729 году утверждён новый герб Синбирска — в лазуревом поле белый столб, увенчанный золотой короной</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="my-deputat">
-                <h2 class="my-deputat__title">Кто мой депутат?</h2>
+            <section class="my-deputat deputat-page">
                 <div class="my-deputat__body">
                     <div class="my-deputat__tab">
                         <button class="my-deputat__link active" onclick="openTab2(event, 'deputats')">Депутаты</button>
@@ -249,6 +109,41 @@
                                 <a href="deputat.html"><span class="my-deputat__post">Заместитель председателя УГД</span></a>
                                 <span class="my-deputat__district">Округ 7</span>
                                 <a class="my-deputat__email" href="bulanov@ugd.ru">bulanov@ugd.ru</a>
+                            </li>
+                            <li class="my-deputat__item">
+                                <a href="deputat.html"><img class="my-deputat__image" src="img/deputat/6.jpg" alt="" title=""></a>
+                                <a href="deputat.html"><span class="my-deputat__name">Долгов<br>Михаил Севостьянович</span></a>
+                                <a href="deputat.html"><span class="my-deputat__post">Заместитель председателя УГД</span></a>
+                                <span class="my-deputat__district">Округ 33</span>
+                                <a class="my-deputat__email" href="dolgov@ugd.ru">dolgov@ugd.ru</a>
+                            </li>
+                            <li class="my-deputat__item">
+                                <a href="deputat.html"><img class="my-deputat__image" src="img/deputat/7.jpg" alt="" title=""></a>
+                                <a href="deputat.html"><span class="my-deputat__name">Зонов<br>Константин Андреевич</span></a>
+                                <a href="deputat.html"><span class="my-deputat__post">Заместитель председателя УГД</span></a>
+                                <span class="my-deputat__district">Округ 30</span>
+                                <a class="my-deputat__email" href="zonow@ugd.ru">zonow@ugd.ru</a>
+                            </li>
+                            <li class="my-deputat__item">
+                                <a href="deputat.html"><img class="my-deputat__image" src="img/deputat/8.jpg" alt="" title=""></a>
+                                <a href="deputat.html"><span class="my-deputat__name">Седов<br>Денис Константинович</span></a>
+                                <a href="deputat.html"><span class="my-deputat__post">Заместитель председателя УГД</span></a>
+                                <span class="my-deputat__district">Округ 26</span>
+                                <a class="my-deputat__email" href="sedov@ugd.ru">sedov@ugd.ru</a>
+                            </li>
+                            <li class="my-deputat__item">
+                                <a href="deputat.html"><img class="my-deputat__image" src="img/deputat/9.jpg" alt="" title=""></a>
+                                <a href="deputat.html"><span class="my-deputat__name">Абитов<br>Рамиль Загитович</span></a>
+                                <a href="deputat.html"><span class="my-deputat__post">Депутат УГД</span></a>
+                                <span class="my-deputat__district">Округ 4</span>
+                                <a class="my-deputat__email" href="abitov@ugd.ru">abitov@ugd.ru</a>
+                            </li>
+                            <li class="my-deputat__item">
+                                <a href="deputat.html"><img class="my-deputat__image" src="img/deputat/10.jpg" alt="" title=""></a>
+                                <a href="deputat.html"><span class="my-deputat__name">Анохин<br>Константин Евгеньевич</span></a>
+                                <a href="deputat.html"><span class="my-deputat__post">Депутат УГД</span></a>
+                                <span class="my-deputat__district">Округ 2</span>
+                                <a class="my-deputat__email" href="anohin@ugd.ru">anohin@ugd.ru</a>
                             </li>
                         </ul>
                     </div>
@@ -331,8 +226,8 @@
                         </ul>
                     </div>
                 </div>
-                <a class="all-deputats" href="#">Все депутаты</a>
             </section>
+
             <footer class="footer">
                 <div class="footer__body">
                     <ul class="footer__menu">
