@@ -13,12 +13,17 @@ const swiper = new Swiper('.swiper', {
 //Открываем вкладку новости по умолчанию
 const news = document.querySelector('#news');
 if(news) {
-  news.style.display = "block"
+  news.style.display = "block";
 }
 //Открываем первые вкладку депутатов
 const deputats = document.querySelector('#deputats');
 if(deputats) {
-  deputats.style.display = "block"
+  deputats.style.display = "block";
+}
+//Открываем первые вкладку структура
+const history = document.querySelector('#history');
+if(history) {
+  history.style.display = "block";
 }
 
 //Открываем табы
@@ -72,3 +77,4 @@ more.onclick = function() {
   }
   
 }
+

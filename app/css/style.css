@@ -1607,6 +1607,63 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 2%;
 }
 
+#history .evolution__range-block {
+  width: 100%;
+}
+
+#history .evolution__range {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: transparent;
+}
+
+#tickmarks option::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 25px;
+  background: #D1DFEC;
+  border-radius: 2px;
+  position: relative;
+  bottom: 48px;
+  left: 40px;
+}
+
+.history__text-block {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 35px;
+}
+
+.history__text-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #262828;
+  margin-bottom: 40px;
+}
+
+.history__text-subtitle {
+  font-weight: bold;
+  font-size: 20px;
+  color: #262828;
+  margin-bottom: 20px;
+}
+
+.history__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}
+
+.history__text.black {
+  margin-bottom: 20px;
+}
+
 /*конец тела сайта*/
 /*Футер*/
 .footer {
