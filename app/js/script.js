@@ -25,6 +25,11 @@ const history = document.querySelector('#history');
 if(history) {
   history.style.display = "block";
 }
+//Открываем первые вкладку деятельность
+const decision = document.querySelector('#decision');
+if(decision) {
+  decision.style.display = "block";
+}
 
 //Открываем табы
 function openTab(evt, value) {
@@ -65,16 +70,32 @@ currentYear.forEach(element => {
 });
 
 //О депутате, открыть полную информацию
-const more = document.querySelector('#about__more');
+const more = document.querySelector('#about__more')
+if(more) {
 
-more.onclick = function() {
-  //document.querySelector('.deputat__about').classList.add('open');
-  document.querySelector('.deputat__about').classList.toggle('open')
-  if(document.querySelector('.deputat__about').classList.contains('open')) {
-    more.innerHTML = 'Свернуть';
-  } else {
-    more.innerHTML = 'Показать';
+  more.onclick = function() {
+    //document.querySelector('.deputat__about').classList.add('open');
+    document.querySelector('.deputat__about').classList.toggle('open')
+    if(document.querySelector('.deputat__about').classList.contains('open')) {
+      more.innerHTML = 'Свернуть';
+    } else {
+      more.innerHTML = 'Показать';
+    }
+    
   }
-  
+
 }
 
+//Аккордион в муниципальной службе
+let acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

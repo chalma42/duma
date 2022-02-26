@@ -483,7 +483,8 @@ input[type=range] {
     -webkit-appearance: none;
     margin: 18px 0;
     width: 100%;
-  }
+    z-index: 1;
+}
 input[type=range]:focus {
     outline: none;
 }
@@ -1115,24 +1116,28 @@ input[type=range]:focus::-ms-fill-upper {
 .history__text-block {
     width: 100%;
     background: #ffffff;
-    padding: 20px;
     margin-bottom: 35px;
+    padding: 20px 0px;
 }
 .history__text-title {
     font-weight: bold;
     font-size: 24px;
     color: #262828;
-    margin-bottom: 40px;
+    margin: 30px 20px 40px 20px;
 }
 .history__text-subtitle {
     font-weight: bold;
     font-size: 20px;
     color: #262828;
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .history__text {
     font-size: 14px;
     line-height: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .margin-top {
     margin-top: 50px;
@@ -1140,8 +1145,160 @@ input[type=range]:focus::-ms-fill-upper {
 .history__text.black {
     margin-bottom: 20px;
 }
+#history h2,
+#structure h2,
+#apparat h2,
+#reglament__body h2,
+#service h2 {
+    margin-bottom: 35px;
+}
+.structure__body,
+.apparat__body,
+.reglament__body {
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.service__body {
+    width: 96%;
+    padding: 20px 2%;
+    background-color: #ffffff;
+    text-align: center;
+}
+.structure__image,
+.apparat__image {
+    width: 96%;
+}
+.reglament__text {
+    width: 96%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    color: #262828;
+    margin-left: 2%;
+}
+.reglament__text.right {
+    text-align: right;
+    margin-right: 20px;
+}
+.reglament__text.title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.reglament__text.subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.reglament__text.subtitle.left {
+    text-align: left;
+}
+.reglament__text.subtitle.min {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
+.accordion {
+    border: 1px solid #EAE6E6;
+    background: #ffffff;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+.accordion__arrow {
+    transition: all .3s;
+}
+.accordion.active .accordion__arrow {
+    transform: rotate(180deg);
+}
+.accordion span.first {
+    font-weight: bold;
+    font-size: 20px;
+}
+.accordion span.second {
+    font-weight: bold;
+    font-size: 16px;
+}
+.panel {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #EAE6E6;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+/*Деятельность*/
+.my-deputat__tab.activity {
+    flex-wrap: wrap;
+}
+.my-deputat__tab.activity button {
+    font-size: 16px;
+    margin: 15px;
+}
+#decision .evolution__range-block {
+    width: 98%;
+    margin: 0 auto;
+}
+#decision .evolution__range {
+    transform: rotate(180deg);
+    background: transparent;
+}
+#decision #tickmarks option::after {
+    left: 15px;
+}
+#decision #tickmarks option {
+    font-size: 12px;
+}
+.activity__text-body {
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 20px;
+}
+.activity__list {
+    width: 98%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.activity__item {
+    border: 1px solid #EAE6E6;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.activity__name {
+    border: 1px solid gold;
+    width: 90%;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+.activity__links {
+    border: 1px solid green;
+    width: 10%;
+    margin-right: 15px;
+}
 /*конец тела сайта*/
 /*Футер*/
 .footer {
