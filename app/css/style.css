@@ -690,6 +690,7 @@ input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
   width: 100%;
+  background: transparent;
   z-index: 1;
 }
 
@@ -1627,7 +1628,7 @@ input[type=range]:focus::-ms-fill-upper {
   background: #D1DFEC;
   border-radius: 2px;
   position: relative;
-  bottom: 48px;
+  bottom: 45px;
   left: 40px;
 }
 
@@ -1684,6 +1685,10 @@ input[type=range]:focus::-ms-fill-upper {
   padding: 20px 0px;
   background-color: #ffffff;
   text-align: center;
+}
+
+.reglament__body {
+  margin-bottom: 30px;
 }
 
 .service__body {
@@ -1807,7 +1812,10 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 15px;
 }
 
-#decision .evolution__range-block {
+#decision .evolution__range-block,
+#postanovleniya .evolution__range-block,
+#postanovleniya_glavy .evolution__range-block,
+#raspryazheniya_glavy .evolution__range-block {
   width: 98%;
   margin: 0 auto;
 }
@@ -1819,18 +1827,27 @@ input[type=range]:focus::-ms-fill-upper {
   background: transparent;
 }
 
-#decision #tickmarks option::after {
-  left: 15px;
+#decision #tickmarks option::after,
+#postanovleniya #tickmarks option::after,
+#postanovleniya_glavy #tickmarks option::after,
+#raspryazheniya_glavy #tickmarks option::after {
+  left: 12px;
 }
 
-#decision #tickmarks option {
+#decision #tickmarks option,
+#postanovleniya #tickmarks option,
+#postanovleniya_glavy #tickmarks option,
+#raspryazheniya_glavy #tickmarks option {
   font-size: 12px;
 }
 
-.activity__text-body {
+.activity__text-body,
+.reception__body {
   width: 100%;
   background-color: #ffffff;
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .activity__list {
@@ -1852,10 +1869,10 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 20px;
 }
 
 .activity__name {
-  border: 1px solid gold;
   width: 90%;
   margin-left: 15px;
   font-weight: bold;
@@ -1864,9 +1881,112 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .activity__links {
-  border: 1px solid green;
   width: 10%;
   margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activity__links a {
+  margin: 0px 4px;
+}
+
+/*приемная*/
+.reception__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reception__form {
+  width: 48%;
+  border: 1px soldi red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reception__form-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.reception__who {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.reception__sel-deputat {
+  margin-left: 20px;
+  width: 100%;
+  height: 20px;
+  border: 0px;
+  border-bottom: 1px solid #BBBBBB;
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.reception__who-my-deputat.accordion {
+  margin-left: 20px;
+  width: auto;
+  padding: 0px;
+  border: 0px;
+}
+
+.reception__panel {
+  width: 100%;
+  background: #F2F6F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.search__on-card {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 /*конец тела сайта*/
