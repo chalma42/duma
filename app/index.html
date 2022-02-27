@@ -43,7 +43,7 @@
                     <li><a href="deputats.html" rel="noopener">Депутаты</a></li>
                     <li><a href="activity.html" rel="noopener">Деятельность</a></li>
                     <li><a href="reception.html" rel="noopener">Приёмная</a></li>
-                    <li><a href="#" rel="noopener">Комитеты</a></li>
+                    <li><a href="committees.html" rel="noopener">Комитеты</a></li>
                     <li><a href="#" rel="noopener">Молодёжная дума</a></li>
                     <li><a href="#" rel="noopener">О городе</a></li>
                 </ul>
@@ -69,7 +69,7 @@
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                         <div class="main-slider__info" >
                             <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
+                            <button class="main-slider__button myBtn">Участвовать</button>
                         </div>
                     </div>
                     <div class="main-slider__item swiper-slide">
@@ -77,7 +77,7 @@
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                         <div class="main-slider__info" >
                             <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
+                            <button class="main-slider__button myBtn">Участвовать</button>
                         </div>
                     </div>
                     <div class="main-slider__item swiper-slide">
@@ -85,7 +85,7 @@
                         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                         <div class="main-slider__info" >
                             <p class="main-slider__text">Викторина ко Дню<br>Народного Единства<br>"Народы России"</p>
-                            <button class="main-slider__button">Участвовать</button>
+                            <button class="main-slider__button myBtn">Участвовать</button>
                         </div>
                     </div>
                 </div>
@@ -400,9 +400,30 @@
         </main>
         
     </div>
+
+
+<!-- Модальном окно -->
+<div id="myModal" class="modal">
+    <!-- Модальное содержание -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Обратная связь</h2>
+      <form id="feedback">
+        <input class="reception__input" type="text" placeholder="Ваше ФИО*" name="name">
+        <input id="tel" class="reception__input" type="text" placeholder="Ваш телефон*" name="phone">
+        <input class="reception__input" type="text" placeholder="Ваш e-mail" name="email">
+        <button class="reception__button">Отправить</button>
+      </form>
+      <div id="my_form_message"></div>
+    </div>
+  
+</div>
 <!--Swiper Slider-->
 <script src="js/swiper-bundle.min.js"></script>
 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
 <!--Custom scripts-->
 <script src="js/script.min.js"></script>
 </body>

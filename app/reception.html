@@ -9,6 +9,9 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+    <!--Swiper Slider-->
+    <link rel="stylesheet" href="css/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
     <header>
@@ -42,7 +45,7 @@
                     <li><a href="deputats.html" rel="noopener">Депутаты</a></li>
                     <li><a href="activity.html" rel="noopener">Деятельность</a></li>
                     <li><a href="reception.html" rel="noopener">Приёмная</a></li>
-                    <li><a href="#" rel="noopener">Комитеты</a></li>
+                    <li><a href="committees.html" rel="noopener">Комитеты</a></li>
                     <li><a href="#" rel="noopener">Молодёжная дума</a></li>
                     <li><a href="#" rel="noopener">О городе</a></li>
                 </ul>
@@ -66,12 +69,12 @@
             <section class="my-deputat deputat-page">
                 <div class="my-deputat__body">
                     <div class="my-deputat__tab activity">
-                        <button class="my-deputat__link active" onclick="openTab2(event, 'decision')">Работа с обращениями граждан</button>
-                        <button class="my-deputat__link" onclick="openTab2(event, 'postanovleniya')">График приёма избирателей депутатами УГД в общественной приёмной</button>
-                        <button class="my-deputat__link" onclick="openTab2(event, 'postanovleniya_glavy')">Ульяновская региональная общественная приёмная лидера партии “Единая Россия” Д.А. Медведева</button>
+                        <button class="my-deputat__link active" onclick="openTab2(event, 'reception')">Работа с обращениями граждан</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'reception-schedule')">График приёма избирателей депутатами УГД в общественной приёмной</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'reg_palata')">Ульяновская региональная общественная приёмная лидера партии “Единая Россия” Д.А. Медведева</button>
                     </div>
                     
-                    <div id="decision" class="my-deputat__content">
+                    <div id="reception" class="my-deputat__content">
                         <h2>Работа с обращениями граждан</h2>
                         <div class="reception__body">
                             <form class="reception__form" type="post">
@@ -93,13 +96,154 @@
                                 <span class="reception__who-my-deputat accordion">Кто мой депутат?</span>
                                 <div class="panel reception__panel">
                                     <span class="search__on-card">Поиск по карте</span>
-                                    <div>
-                                        <input type="search"><span>или</span><input type="search">
+                                    <div class="reception__search-block">
+                                        <input class="reception__search-input" type="search" placeholder="Улица и номер дома"><span>или</span><input class="reception__search-input" type="search" placeholder="Номер избирательного округа">
+                                    </div>
+                                    <img src="img/pages/reception/map.png" alt="" title="" style="width: 96%;margin: 0 2%;margin-bottom: 25px;">
+                                    <span class="search__on-photo">Поиск по фото</span>
+                                    <div class="swiper deputat-slider">
+                                        <div class="swiper-wrapper">
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/1.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Ножечкин<br>Илья<br>Владимирович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/2.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Айзатуллина<br>Алсу<br>Феритовна</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/3.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Крючков<br>Игорь<br>Иванович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/4.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Моргачев<br>Сергей<br>Владимирович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/5.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Буланов<br>Игорь<br>Николаевич</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/6.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Долгов<br>Михаил<br>Севостьянович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/7.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Зонов<br>Константин<br>Андреевич</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/8.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Седов<br>Денис<br>Константинович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/9.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Абитов<br>Рамиль<br>Загитович</span>
+                                            </div>
+                                            <div class="deputat-slider__item swiper-slide">
+                                                <img data-src="img/deputat/10.jpg" alt="" class="swiper-lazy">
+                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <span class="deputat-slider__name">Анохин<br>Константин<br>Евгеньевич</span>
+                                            </div>
+                                        </div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="swiper-button-prev"></div>
+                                        <div class="swiper-button-next"></div>
                                     </div>
                                 </div>
-
+                                <p class="reception__text">Пожалуйста, прежде чем отправить обращение в форме электронного документа, внимательно <a href="#" target="_blank">ознакомьтесь со следующей информацией</a></p>
+                                <p class="reception__text">В соответствии с частью 1 статьи 7 Федерального закона от 2 мая 2006 года № 59-ФЗ «О порядке рассмотрения обращений граждан Российской Федерации» гражданин в своем обращении в обязательном порядке излагает суть предложения, заявления или жалобы.</p>
+                                <p class="reception__text">Обращаем Ваше внимание, что в целях объективного и всестороннего рассмотрения Вашего обращения рекомендуется в тексте обращения указывать адрес описанного Вами места действия, факта или события.</p>
+                                <p class="reception__text">В случае, если текст Вашего обращения не позволяет определить суть предложения, заявления или жалобы, ответ на обращение не дается и оно не подлежит направлению на рассмотрение в государственный орган, орган местного самоуправления или должностному лицу, в соответствии с их компетенцией, о чем Вам будет сообщено в течение семи дней со дня регистрации обращения.</p>
+                                <textarea class="reception__textarea" placeholder="Текст Вашего обращения"></textarea>
+                                <input class="reception__input" type="text" placeholder="Ваше ФИО*" name="name">
+                                <input class="reception__input" type="text" placeholder="Ваш e-mail" name="email">
+                                <input class="reception__input" type="text" placeholder="Ваш телефон*" name="phone">
+                                <input class="reception__input" type="text" placeholder="Ваш почтовый адрес*" name="addr">
+                                <button class="reception__button">Отправить</button>
                             </form>
+                            <div class="reception__helper">
+                                <p class="reception__helper-name">Начальник отдела делопроизводства, работы с обращениями граждан и контроля</p>
+                                <div class="reception__helper-info-block">
+                                    <div class="reception__picture">
+                                        <img class="reception__image" src="img/pages/reception/helper.jpg" alt="" title="">
+                                    </div>
+                                    <div class="reception__contacts">
+                                        <span class="reception__name">Аскалонова Анна Геннадьевна</span>
+                                        <a class="reception__phone" href="tel:+78422270940">(8422) 27-09-40</a>
+                                        <p class="reception__addr-title">Почтовый адрес Ульяновской Городской Думы:</p>
+                                        <p class="reception__addr">432017, г. Ульяновск, ул. Кузнецова, 7</p>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    <div id="reception-schedule" class="my-deputat__content">
+                        <h2>График приёма избирателей депутатами УГД в общественной приемной</h2>
+                        <div class="reception-schedule__body">
+                            <p class="reception-schedule__title">Общественные приемные на карте с графиком работы</p>
+                            <div class="reception__search-block">
+                                <input class="reception__search-input" type="search" placeholder="Введите ваш адрес"><span>или</span><input class="reception__search-input" type="search" placeholder="Номер избирательного округа">
+                            </div>
+                            <img src="img/pages/reception/map2.jpg" alt="" title="" style="width: calc(100% - 30px);margin: 0 auto;margin-bottom: 50px;">
+                            <p class="reception-schedule__title">График приёма избирателей депутатами Ульяновской Городской Думы на январь 2022 года</p>
+                            <table class="reception-schedule__table">
+                                <tr>
+                                    <td class="table__title-col">№</td>
+                                    <td class="table__title-col">ФИО</td>
+                                    <td class="table__title-col">Место приема</td>
+                                    <td class="table__title-col">Время приема</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Фадеев<br>Владимир<br>Владиславович</td>
+                                    <td>
+                                        <p>Ул. Локомотивная, д.85</p>
+                                        <p>тел. 8-9510-97-40-54</p>
+                                    </td>
+                                    <td rowspan="4" class="table__title-col time">
+                                        <img src="img/pages/reception/reception-table.jpg" title="" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Анохин<br>Константин<br>Евгеньевич</td>
+                                    <td>
+                                        <p>пр-т Гая, 15 (ДК «Киндяковка»)</p>
+                                        <p>тел. 8-937-033-60-68</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Борисов<br>Алексей<br>Владимирович</td>
+                                    <td>
+                                        <p>пр-т Гая, 15 (ДК «Киндяковка»)</p>
+                                        <p>тел. 8-937-033-60-68</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Анохин<br>Константин<br>Евгеньевич</td>
+                                    <td>
+                                        <p>пр-т Гая, 15 (ДК «Киндяковка»)</p>
+                                        <p>тел. 8-937-033-60-68</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="reg_palata" class="my-deputat__content">
+                        <h2>Ульяновская региональная общественная приёмная лидера партии “Единая Россия” Д.А. Медведева</h2>
+                        <div class="reception-schedule__body"> </div>
                     </div>
 
                 </div>

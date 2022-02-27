@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.main-slider', {
     // Default parameters
     slidesPerView: 1,
     autoplay: {
@@ -8,7 +8,24 @@ const swiper = new Swiper('.swiper', {
     preloadImages: false,
     // Enable lazy loading
     lazy: true,
-  });
+});
+const swiper2 = new Swiper('.deputat-slider', {
+  // Default parameters
+  slidesPerView: 5,
+  autoplay: {
+    delay: 112000,
+  },
+  // Disable preloading of all images
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  spaceBetween: 15,
+});
   
 //Открываем вкладку новости по умолчанию
 const news = document.querySelector('#news');
@@ -29,6 +46,16 @@ if(history) {
 const decision = document.querySelector('#decision');
 if(decision) {
   decision.style.display = "block";
+}
+//Открываем первые вкладку приемная
+const reception = document.querySelector('#reception');
+if(reception) {
+  reception.style.display = "block";
+}
+//Открываем первые вкладку комитеты
+const structure_committees = document.querySelector('#structure_committees');
+if(structure_committees) {
+  structure_committees.style.display = "block";
 }
 
 //Открываем табы
@@ -99,3 +126,39 @@ for (let i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+//Модальное окно
+let modal = document.getElementById("myModal");
+let btn = document.querySelectorAll(".myBtn");
+let span = document.getElementsByClassName("close")[0];
+btn.forEach(element => {
+  element.onclick = function() {
+    modal.style.display = "block";
+  }
+});
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+//маска телефона
+$('#tel').inputmask({"mask": "+7 (999) 999-9999"}); 
+
+
+/*отправка данных с формы Заправка картриджей*/
+$("#feedback").submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+    type: "POST",
+    url: "../lib/post.php",
+    data: $("#feedback").serialize(),
+    success: function(data) {
+      $("#my_form_message").html(data);
+    }
+  });
+});
