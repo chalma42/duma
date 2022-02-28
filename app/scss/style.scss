@@ -749,12 +749,6 @@ input[type=range]:focus::-ms-fill-upper {
     text-decoration: underline;
     color: red;
 }
-#honorary-citizens {
-    background-color: #585C5F;
-}
-#members {
-    background-color: #367ebd;
-}
 .all-deputats {
     width: 100%;
     display: flex;
@@ -1609,7 +1603,8 @@ input[type=range]:focus::-ms-fill-upper {
 .activity__item.committees .accordion {
     border: 0px;
 }
-.activity__item.committees .accordion.active a {
+.activity__item.committees .accordion.active a,
+.activity__item.committees .accordion.active img {
     transform: rotate(180deg);
 }
 .structure-committees__panel {
@@ -1781,3 +1776,248 @@ input[type=range]:focus::-ms-fill-upper {
     text-decoration: none;
     cursor: pointer;
 }
+
+@media (max-width: 1799px) {
+    .logo-block {
+        width: 350px;
+    }
+    .left-side {
+        width: 350px;
+    }
+    .head-block {
+        width: calc(100% - 350px);
+    }
+    main {
+        width: calc(100% - 350px);
+    }
+    .head-block__list {
+        max-width: 980px;
+    }
+    
+}
+@media (max-width: 1699px) {
+    .head-block__list {
+        max-width: 885px;
+    }
+    .my-deputat__item {
+        padding: 20px;
+    }
+    .my-deputat__image {
+        width: 170px;
+    }
+    .main-slider {
+        max-width: 1180px;
+    }
+    .content-list {
+        max-width: 1180px;
+    }
+    .main-video {
+        max-width: 1180px;
+    }
+    .evolution {
+        max-width: 1180px;
+    }
+    .opacity__button {
+        font-size: 16px;
+    }
+    .history {
+        max-width: 1180px;
+    }
+    .my-deputat {
+        max-width: 1180px;
+    }
+    #reception .reception__search-block {
+        flex-wrap: wrap;
+    }
+    #reception .reception__search-input {
+        width: 100%;
+    }
+    #reception .reception__search-block span {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .table__title-col.time {
+        width: 604px;
+    }
+    .table__title-col.time img {
+        width: 600px;
+    }
+}
+@media (max-width: 1599px) {
+    .head-block__list {
+        max-width: 785px;
+    }
+    .main-slider {
+        max-width: 1100px;
+    }
+    .content-list {
+        max-width: 1100px;
+    }
+    .main-video {
+        max-width: 1100px;
+    }
+    .evolution {
+        max-width: 1100px;
+    }
+    .history {
+        max-width: 1100px;
+    }
+    .my-deputat {
+        max-width: 1100px;
+    }
+}
+@media (max-width: 1499px) {
+    .head-block__list {
+        max-width: 686px;
+    }
+    .head-block__image {
+        width: 100px;
+        margin-right: 30px;
+    }
+    .head-block__text {
+        margin: 0 30px;
+    }
+    .main-slider {
+        max-width: 1020px;
+    }
+    .content-list {
+        max-width: 1020px;
+    }
+    .main-video {
+        max-width: 1020px;
+    }
+    .evolution {
+        max-width: 1020px;
+    }
+    .history {
+        max-width: 1020px;
+    }
+    .my-deputat {
+        max-width: 1020px;
+    }
+    .my-deputat__item {
+        padding: 10px;
+    }
+    .deputat-page .my-deputat__image {
+        width: 140px; 
+    }
+    .table__title-col.time {
+        width: 504px;
+    }
+    .table__title-col.time img {
+        width: 500px;
+    }
+    
+}
+@media (max-width: 1399px) {
+    .logo-block {
+        width: 300px;
+    }
+    .logo-block img {
+        width: 220px;
+    }
+    .head-block {
+        width: calc(100% - 300px);
+    }
+    .left-side {
+        width: 300px;
+    }
+    main {
+        width: calc(100% - 300px);
+    }
+    .left-side__search {
+        width: 270px;
+    }
+    .left-side__navigation {
+        width: 270px;
+    }
+    .deputat-left {
+        left: auto;
+    }
+    .left-side__contacts {
+        width: 270px;
+    }
+    .head-block__list {
+        max-width: 655px;
+    }
+    .head-block__image {
+        width: 90px;
+        margin-right: 25px;
+    }
+    .head-block__text {
+        margin: 0 20px;
+    }
+    .main-slider {
+        max-width: 980px;
+    }
+    .content-list {
+        max-width: 980px;
+    }
+    .main-video {
+        max-width: 980px;
+    }
+    .evolution {
+        max-width: 980px;
+    }
+    .history {
+        max-width: 980px;
+    }
+    .my-deputat {
+        max-width: 980px;
+    }
+    .my-deputat__image {
+        width: 160px;
+    }
+    .all-deputats {
+        margin-top: 20px;
+    }
+    .table__title-col.time {
+        width: 424px;
+    }
+    .table__title-col.time img {
+        width: 420px;
+    }
+}
+@media (max-width: 1299px) {
+    .logo-block {
+        width: 250px;
+    }
+    .head-block {
+        width: calc(100% - 250px);
+    }
+    .left-side {
+        width: 250px;
+    }
+    main {
+        width: calc(100% - 250px);
+    }
+    .head-block__list {
+        max-width: 620px;
+    }
+    .left-side__search {
+        width: 220px;
+    }
+    .left-side__navigation {
+        width: 220px;
+    }
+    .left-side__contacts {
+        width: 220px;
+    }
+    .my-deputat__image {
+        width: 150px;
+    }
+    .table__title-col.time {
+        width: 364px;
+    }
+    .table__title-col.time img {
+        width: 360px;
+    }
+}
+
+@media (max-width: 1199px) {}
+@media (max-width: 1024px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+@media (max-width: 577px) {}
+@media (max-width: 449px) {}

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Деятельность"> 
+	<meta name="Keywords" content="Деятельность">
+    <title>Деятельность</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-block">
+            <a href="/" class="logo-block__link" rel="noopener">
+                <img src="img/logo.png" alt="Ульяновская городская дума">
+            </a>
+        </div>
+        <div class="head-block">
+            <img class="head-block__image" src="img/25year.jpg" alt="25 лет">
+            <ul class="head-block__list">
+                <li class="head-block__text">Перспективный план работы Ульяновской Городской Думы на II полугодие 2021 года</li>
+                <li class="head-block__text">Бюджет г.Ульяновска 2021-2023</li>
+                <li class="head-block__text">О мерах по реализации инициативных проектов на территории муниципального образования «город Ульяновск»</li>
+            </ul>
+            <div class="head-block__contacts">
+                <a class="head-block__telephone" href="tel:+78422413800" rel="noopener">8 (8422) 41-38-00</a>
+                <a class="head-block__email" href="mailto:duma@ugd.ru" rel="noopener">duma@ugd.ru</a>
+                <a class="head-block__twitter" href="https://twitter.com/duma73" target="_blank" rel="noreferrer">duma73</a>
+            </div>
+        </div>
+    </header>
+    <div class="site-body">
+        <div class="left-side">
+            <form action="#" method="GET">
+                <input class="left-side__search"  type="search" placeholder="Поиск по сайту">
+            </form>
+            <nav class="left-side__navigation">
+                <ul>
+                    <li><a href="history.html" rel="noopener">О Думе</a></li>
+                    <li><a href="deputats.html" rel="noopener">Депутаты</a></li>
+                    <li><a href="activity.html" rel="noopener">Деятельность</a></li>
+                    <li><a href="reception.html" rel="noopener">Приёмная</a></li>
+                    <li><a href="committees.html" rel="noopener">Комитеты</a></li>
+                    <li><a href="#" rel="noopener">Молодёжная дума</a></li>
+                    <li><a href="#" rel="noopener">О городе</a></li>
+                </ul>
+            </nav>
+            <aside class="deputat-left">
+                <img src="img/deputat/nozhechkin.jpg" alt="">
+                <span class="deputat-left__name">Ножечкин<br>Илья Владимирович</span>
+                <span class="deputat-left__position">Председатель Ульяновской<br>Городской Думы</span>
+            </aside>
+            <div class="left-side__contacts">
+                <a class="left-side__telephone" href="tel:+78422413800" rel="noopener">8 (8422) 41-38-00</a>
+                <a class="left-side__email" href="mailto:duma@ugd.ru" rel="noopener">duma@ugd.ru</a>
+                <a class="left-side__twitter" href="https://twitter.com/duma73" target="_blank" rel="noopener">duma73</a>
+            </div>
+        </div>
+    
+        <main class="main"> 
+            <section class="deputat">
+                <h1 class="deputat__name">Деятельность</h1>
+            </section>
+            <section class="my-deputat deputat-page">
+                <div class="my-deputat__body">
+                    <div class="my-deputat__tab activity">
+                        <button class="my-deputat__link active" onclick="openTab2(event, 'decision')">Решения</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'postanovleniya')">Постановления</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'postanovleniya_glavy')">Постановления Главы города</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'raspryazheniya_glavy')">Распоряжения Главы города</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'poryadok_obzhalovaniya')">Порядок обжалования НПА УГД</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'documents')">Документы</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'ochered_zasedaniya')">Очередное заседание</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'plan_raboty')">План работы на II полугодие 2022 г</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'plan_raboty2')">План работы декабрь 2022 г</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'protiv_corruption')">Противодействие коррупции</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'projecty_documentov')">Проекты документов</button>
+                    </div>
+                    
+                    <div id="decision" class="my-deputat__content">
+                        <h2>Решения</h2>
+                        <div class="activity__text-body">
+                            <div class="evolution__range-block" >
+                                <input class="evolution__range" type="range" list="tickmarks" min="2001" max="2021" value="2019" name="range" step="1" list="tickmarks" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
+                                <div class="evolution__years-block" style="visibility: hidden;position: absolute;left: 0;">
+                                    <span class="current-year"></span>
+                                    <span id="evolution__years-start">1700</span>
+                                </div>
+                                <datalist id="tickmarks" style="width: 100%;display: flex; justify-content: space-between;">
+                                    <option value="2021" label="2021"></option>
+                                    <option value="2020" label="2020"></option>
+                                    <option value="2019" label="2019"></option>
+                                    <option value="2018" label="2018"></option>
+                                    <option value="2017" label="2017"></option>
+                                    <option value="2016" label="2016"></option>
+                                    <option value="2015" label="2015"></option>
+                                    <option value="2014" label="2014"></option>
+                                    <option value="2013" label="2013"></option>
+                                    <option value="2012" label="2012"></option>
+                                    <option value="2011" label="2011"></option>
+                                    <option value="2010" label="2010"></option>
+                                    <option value="2009" label="2009"></option>
+                                    <option value="2008" label="2008"></option>
+                                    <option value="2007" label="2007"></option>
+                                    <option value="2006" label="2006"></option>
+                                    <option value="2005" label="2005"></option>
+                                    <option value="2004" label="2004"></option>
+                                    <option value="2003" label="2003"></option>
+                                    <option value="2002" label="2002"></option>
+                                    <option value="2001" label="2001"></option>
+                                </datalist>
+                            </div>
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №218 от 08.12.2021 "О внесении изменений в решение Ульяновской Городской Думы от 27.06.2007 №83 «Об утверждении Генерального плана города Ульяновска»"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №214 от 08.12.2021 "Об утверждении бюджета муниципального образования «город Ульяновск» на 2022 год и на плановый период 2023 и 2024 годов"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №212 от 24.11.2021 "Об утверждении плана работы Ульяновской Городской Думы на декабрь 2021 года"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №211 от 24.11.2021 "О поручениях в план работы Контрольно-счётной палаты муниципального образования «город Ульяновск» на 2022 год"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №210 от 24.11.2021 "О внесении изменений в решение Ульяновской Городской Думы от 19.03.2014 № 33 «Об утверждении Порядка сообщения лицами, замещающими муниципальные должности, и муниципальными... </p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/open.png" title="" alt=""></a>
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №209 от 24.11.2021 "Об утверждении Положения о муниципальном контроле в области охраны и использования особо охраняемых природных территорий местного значения в границах муниципального образования «город Ульяновск»"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №208 от 24.11.2021 "«О внесении изменений в решение Ульяновской Городской Думы от 24.05.2006 № 90 «Об учреждении отраслевых (функциональных) органов администрации города Ульяновска»"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №207 от 24.11.2021 "О внесении изменений в решение Ульяновской Городской Думы от 28.10.2020 №29 «Об утверждении Программы приватизации муниципального имущества муниципального образования «город Ульяновск»... </p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/open.png" title="" alt=""></a>
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Решение №206 от 24.11.2021 "О внесении изменений в решение Ульяновской Городской Думы от 09.12.2020 №57 «Об утверждении бюджета муниципального образования «город Ульяновск» на 2021 год и на плановый период 2022 и 2023 годов»"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/open.png" title="" alt=""></a>
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="postanovleniya" class="my-deputat__content">
+                        <h2>Постановления</h2>
+                        <div class="activity__text-body">
+                            <div class="evolution__range-block" >
+                                <input class="evolution__range" type="range" list="tickmarks" min="2001" max="2021" value="2019" name="range" step="1" list="tickmarks" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
+                                <div class="evolution__years-block" style="visibility: hidden;position: absolute;left: 0;">
+                                    <span class="current-year"></span>
+                                    <span id="evolution__years-start">1700</span>
+                                </div>
+                                <datalist id="tickmarks" style="width: 100%;display: flex; justify-content: space-between;">
+                                    <option value="2021" label="2021"></option>
+                                    <option value="2020" label="2020"></option>
+                                    <option value="2019" label="2019"></option>
+                                    <option value="2018" label="2018"></option>
+                                    <option value="2017" label="2017"></option>
+                                    <option value="2016" label="2016"></option>
+                                    <option value="2015" label="2015"></option>
+                                    <option value="2014" label="2014"></option>
+                                    <option value="2013" label="2013"></option>
+                                    <option value="2012" label="2012"></option>
+                                    <option value="2011" label="2011"></option>
+                                    <option value="2010" label="2010"></option>
+                                    <option value="2009" label="2009"></option>
+                                    <option value="2008" label="2008"></option>
+                                    <option value="2007" label="2007"></option>
+                                    <option value="2006" label="2006"></option>
+                                    <option value="2005" label="2005"></option>
+                                    <option value="2004" label="2004"></option>
+                                    <option value="2003" label="2003"></option>
+                                    <option value="2002" label="2002"></option>
+                                    <option value="2001" label="2001"></option>
+                                </datalist>
+                            </div>
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №164 от 08.12.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный работник промышленности Ульяновской области» Сандиной Н.М."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №163 от 08.12.2021 г. "О согласовании документов о присвоении звания «Почётный гражданин Ульяновской области» Емельянову В.Н."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №161 от 24.11.2021 г. "О согласовании документов о награждении медалью Почёта Столярова П.К."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №160 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Белокурова О.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №159 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Мороз Л.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №158 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Казакову Д.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №157 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Власову В.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №156 от 24.11.2021 г. "О согласовании документов о присвоении звания Ульяновской области «Почётный гражданин Ульяновской области» Лебедько А.М. посмертно"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №155 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный юрист Ульяновской области» Черабаевой О.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="postanovleniya_glavy" class="my-deputat__content">
+                        <h2>Постановления Главы города</h2>
+                        <div class="activity__text-body">
+                            <div class="evolution__range-block" >
+                                <input class="evolution__range" type="range" list="tickmarks" min="2012" max="2021" value="2019" name="range" step="1" list="tickmarks" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
+                                <div class="evolution__years-block" style="visibility: hidden;position: absolute;left: 0;">
+                                    <span class="current-year"></span>
+                                    <span id="evolution__years-start">1700</span>
+                                </div>
+                                <datalist id="tickmarks" style="width: 100%;display: flex; justify-content: space-between;">
+                                    <option value="2021" label="2021"></option>
+                                    <option value="2020" label="2020"></option>
+                                    <option value="2019" label="2019"></option>
+                                    <option value="2018" label="2018"></option>
+                                    <option value="2017" label="2017"></option>
+                                    <option value="2016" label="2016"></option>
+                                    <option value="2015" label="2015"></option>
+                                    <option value="2014" label="2014"></option>
+                                    <option value="2013" label="2013"></option>
+                                    <option value="2012" label="2012"></option>
+                                </datalist>
+                            </div>
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №164 от 08.12.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный работник промышленности Ульяновской области» Сандиной Н.М."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №163 от 08.12.2021 г. "О согласовании документов о присвоении звания «Почётный гражданин Ульяновской области» Емельянову В.Н."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №161 от 24.11.2021 г. "О согласовании документов о награждении медалью Почёта Столярова П.К."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №160 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Белокурова О.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №159 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Мороз Л.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №158 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Казакову Д.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №157 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Власову В.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №156 от 24.11.2021 г. "О согласовании документов о присвоении звания Ульяновской области «Почётный гражданин Ульяновской области» Лебедько А.М. посмертно"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Постановление №155 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный юрист Ульяновской области» Черабаевой О.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="raspryazheniya_glavy" class="my-deputat__content">
+                        <h2>Распоряжения Главы города</h2>
+                        <div class="activity__text-body">
+                            <div class="evolution__range-block" >
+                                <input class="evolution__range" type="range" list="tickmarks" min="2012" max="2021" value="2019" name="range" step="1" list="tickmarks" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
+                                <div class="evolution__years-block" style="visibility: hidden;position: absolute;left: 0;">
+                                    <span class="current-year"></span>
+                                    <span id="evolution__years-start">1700</span>
+                                </div>
+                                <datalist id="tickmarks" style="width: 100%;display: flex; justify-content: space-between;">
+                                    <option value="2021" label="2021"></option>
+                                    <option value="2020" label="2020"></option>
+                                    <option value="2019" label="2019"></option>
+                                    <option value="2018" label="2018"></option>
+                                    <option value="2017" label="2017"></option>
+                                    <option value="2016" label="2016"></option>
+                                    <option value="2015" label="2015"></option>
+                                    <option value="2014" label="2014"></option>
+                                    <option value="2013" label="2013"></option>
+                                    <option value="2012" label="2012"></option>
+                                </datalist>
+                            </div>
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №164 от 08.12.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный работник промышленности Ульяновской области» Сандиной Н.М."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №163 от 08.12.2021 г. "О согласовании документов о присвоении звания «Почётный гражданин Ульяновской области» Емельянову В.Н."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №161 от 24.11.2021 г. "О согласовании документов о награждении медалью Почёта Столярова П.К."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №160 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Белокурова О.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №159 от 24.11.2021 г. "О согласовании документов о награждении Почётным знаком Ульяновской области «За веру и добродетель» Мороз Л.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №158 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Казакову Д.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №157 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный спасатель Ульяновской области» Власову В.В."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №156 от 24.11.2021 г. "О согласовании документов о присвоении звания Ульяновской области «Почётный гражданин Ульяновской области» Лебедько А.М. посмертно"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Распоряжение №155 от 24.11.2021 г. "О согласовании документов о присвоении почётного звания Ульяновской области «Заслуженный юрист Ульяновской области» Черабаевой О.Ю."</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="poryadok_obzhalovaniya" class="my-deputat__content">
+                        <h2>Порядок обжалования нормативных правовых актов Ульяновской Городской Думы</h2>
+                        <div class="activity__text-body">
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Производство по делам о признании недействующими нормативных правовых актов полностью или в части</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Рассмотрение дел об оспаривании ненормативных правовых актов, решений и действий (бездействия) государственных органов, органов местного самоуправления, иных органов, организаций, наделенных Федеральным Законом...</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Рассмотрение дел об оспаривании нормативных правовых актов</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="documents" class="my-deputat__content">
+                        <h2>Документы</h2>
+                        <div class="activity__text-body">
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Положение о Почётной грамоте и Благодарственном письме Ульяновской Городской Думы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Учётная политика для целей бюджетного учёта Ульяновской Городской Думы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">О внесении изменений в распоряжение Главы города Ульяновска от 10.12.2015 №27 "Об учётной политике Ульяновской Городской Думы"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="ochered_zasedaniya" class="my-deputat__content">
+                        <h2>Очередное заседание 10 марта 2022</h2>
+                        <div class="reglament__body">
+                            <p class="reglament__text right">УТВЕРЖДАЮ</p>
+                            <p class="reglament__text right">Исполняющий обязанности</p>
+                            <p class="reglament__text right">Председателя Ульяновской</p>
+                            <p class="reglament__text right">Городской Думы</p>
+                            <p class="reglament__text right">_____________ А.Ф. Айзатуллина</p>
+                            <p class="reglament__text right">«____» _____________2021 г.</p>
+
+                            <h3 class="reglament__text title">Повестка  очередного заседания</h3>
+
+                            <p class="reglament__text">Дата: 15 декабря 2021 года</p>
+                            <p class="reglament__text">Время рассмотрения:  10.00 – 11.15</p>
+                            <p class="reglament__text">Место проведения:  видео-конференц-связь</p>
+                            <p class="reglament__text">Об утверждении повестки очередного заседания.</p>
+                            <p class="reglament__text">Докладчик: Ножечкин Илья Владимирович, Председатель Ульяновской Городской Думы</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min"> 1. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 09.12.2020 № 57 «Об утверждении бюджета муниципального образования «город Ульяновск» на 2021 год и на плановый период 2022 и 2023 годов».</p>
+                            <p class="reglament__text">1. Городская Дума в соответствии с Уставом города является представительным органом муниципального образования «город Ульяновск», избранным на муниципальных выборах.</p>
+                            <p class="reglament__text">2. Городская Дума состоит из 40 депутатов, избираемых на основе всеобщего равного и прямого избирательного права при тайном голосовании сроком на 5 лет. </p>
+                            <p class="reglament__text">3. В своей деятельности Городская Дума руководствуется Конституцией Российской Федерации, законодательством Российской Федерации, законодательными и иными правовыми актами Ульяновской области, Уставом города, иными муниципальными правовыми актами, настоящим Регламентом.</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">2. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 30.04.2003  № 71 «Об утверждении Порядка определения размера арендной платы за земельные участки, находящиеся в собственности муниципального образования «город Ульяновск», предоставленные в аренду без торгов».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.15-10.20</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">3. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 25.04.2012 № 70 «Об утверждении Порядка согласования распоряжения имуществом, закреплённым за муниципальными учреждениями муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.20-10.25</p>
+                        </div>
+                    </div>
+                    <div id="plan_raboty" class="my-deputat__content">
+                        <h2>План работы на второе полугодие 2021 г.</h2>
+                        <div class="reglament__body">
+                            <p class="reglament__text right">УТВЕРЖДАЮ</p>
+                            <p class="reglament__text right">Исполняющий обязанности</p>
+                            <p class="reglament__text right">Председателя Ульяновской</p>
+                            <p class="reglament__text right">Городской Думы</p>
+                            <p class="reglament__text right">_____________ А.Ф. Айзатуллина</p>
+                            <p class="reglament__text right">«____» _____________2022 г.</p>
+
+                            <h3 class="reglament__text title">План работы на II полугодие 2021 г.</h3>
+
+                            <p class="reglament__text">Дата: 15 декабря 2021 года</p>
+                            <p class="reglament__text">Время рассмотрения:  10.00 – 11.15</p>
+                            <p class="reglament__text">Место проведения:  видео-конференц-связь</p>
+                            <p class="reglament__text">Об утверждении повестки очередного заседания.</p>
+                            <p class="reglament__text">Докладчик: Ножечкин Илья Владимирович, Председатель Ульяновской Городской Думы</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min"> 1. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 09.12.2020 № 57 «Об утверждении бюджета муниципального образования «город Ульяновск» на 2021 год и на плановый период 2022 и 2023 годов».</p>
+                            <p class="reglament__text">1. Городская Дума в соответствии с Уставом города является представительным органом муниципального образования «город Ульяновск», избранным на муниципальных выборах.</p>
+                            <p class="reglament__text">2. Городская Дума состоит из 40 депутатов, избираемых на основе всеобщего равного и прямого избирательного права при тайном голосовании сроком на 5 лет. </p>
+                            <p class="reglament__text">3. В своей деятельности Городская Дума руководствуется Конституцией Российской Федерации, законодательством Российской Федерации, законодательными и иными правовыми актами Ульяновской области, Уставом города, иными муниципальными правовыми актами, настоящим Регламентом.</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">2. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 30.04.2003  № 71 «Об утверждении Порядка определения размера арендной платы за земельные участки, находящиеся в собственности муниципального образования «город Ульяновск», предоставленные в аренду без торгов».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.15-10.20</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">3. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 25.04.2012 № 70 «Об утверждении Порядка согласования распоряжения имуществом, закреплённым за муниципальными учреждениями муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.20-10.25</p>
+                        </div>
+                    </div>
+                    <div id="plan_raboty2" class="my-deputat__content">
+                        <h2>План работы декабрь 2022 г</h2>
+                        <div class="reglament__body">
+                            <p class="reglament__text right">УТВЕРЖДАЮ</p>
+                            <p class="reglament__text right">Исполняющий обязанности</p>
+                            <p class="reglament__text right">Председателя Ульяновской</p>
+                            <p class="reglament__text right">Городской Думы</p>
+                            <p class="reglament__text right">_____________ А.Ф. Айзатуллина</p>
+                            <p class="reglament__text right">«____» _____________2022 г.</p>
+
+                            <h3 class="reglament__text title">План работы декабрь 2022 г</h3>
+
+                            <p class="reglament__text">Дата: 15 декабря 2021 года</p>
+                            <p class="reglament__text">Время рассмотрения:  10.00 – 11.15</p>
+                            <p class="reglament__text">Место проведения:  видео-конференц-связь</p>
+                            <p class="reglament__text">Об утверждении повестки очередного заседания.</p>
+                            <p class="reglament__text">Докладчик: Ножечкин Илья Владимирович, Председатель Ульяновской Городской Думы</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min"> 1. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 09.12.2020 № 57 «Об утверждении бюджета муниципального образования «город Ульяновск» на 2021 год и на плановый период 2022 и 2023 годов».</p>
+                            <p class="reglament__text">1. Городская Дума в соответствии с Уставом города является представительным органом муниципального образования «город Ульяновск», избранным на муниципальных выборах.</p>
+                            <p class="reglament__text">2. Городская Дума состоит из 40 депутатов, избираемых на основе всеобщего равного и прямого избирательного права при тайном голосовании сроком на 5 лет. </p>
+                            <p class="reglament__text">3. В своей деятельности Городская Дума руководствуется Конституцией Российской Федерации, законодательством Российской Федерации, законодательными и иными правовыми актами Ульяновской области, Уставом города, иными муниципальными правовыми актами, настоящим Регламентом.</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">2. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 30.04.2003  № 71 «Об утверждении Порядка определения размера арендной платы за земельные участки, находящиеся в собственности муниципального образования «город Ульяновск», предоставленные в аренду без торгов».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.15-10.20</p>
+                            <br><br>
+                            <p class="reglament__text subtitle left min">3. О проекте решения Ульяновской Городской Думы «О внесении изменений в решение Ульяновской Городской Думы от 25.04.2012 № 70 «Об утверждении Порядка согласования распоряжения имуществом, закреплённым за муниципальными учреждениями муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Вопрос внесён: Комитетом по бюджету и налогам. </p>
+                            <p class="reglament__text">Докладчик: Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">(продолжительность доклада 5 минут)</p>
+                            <p class="reglament__text">Приглашены: </p>
+                            <p class="reglament__text">1. Вавилин Дмитрий Александрович - Глава города Ульяновска.</p>
+                            <p class="reglament__text">2. Мишин Сергей Михайлович –  Первый заместитель Главы города Ульяновска.</p>
+                            <p class="reglament__text">3. Бармин Александр Александрович – заместитель Главы города – начальник Финансового управления администрации города Ульяновска.</p>
+                            <p class="reglament__text">4. Горюнова Татьяна Владимировна - начальник Управления имущественных отношений, экономики и развития конкуренции администрации города Ульяновска.</p>
+                            <p class="reglament__text">5. Большакова Мария Григорьевна – председатель Общественной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">6. Кузнецова Наталья Владимировна  – председатель Контрольно-счётной палаты муниципального образования «город Ульяновск».</p>
+                            <p class="reglament__text">Время рассмотрения вопроса 5 минут: 10.20-10.25</p>
+                        </div>
+                    </div>
+                    <div id="protiv_corruption" class="my-deputat__content">
+                        <h2>Противодействие коррупции</h2>
+                        <div class="activity__text-body">
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Региональное законодательство</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Методические материалы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Участие Ульяновской Городской Думы в работе по выявлению коррупционных правонарушений в деятельности должностных лиц органов местного самоуправления муниципального образования «город Ульяновск»</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Сведения о доходах, расходах, об имуществе и обязательствах имущественного характера депутатов Ульяновской Городской Думы, а также лиц, замещающих муниципальную должность или должность муниципальной службы в Ульяновской Городской Думе</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Комиссия по соблюдению требований к служебному поведению и урегулированию конфликта интересов</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Нормативно-правовые акты Ульяновской Городской Думы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="projecty_documentov" class="my-deputat__content">
+                        <h2>Документы</h2>
+                        <div class="activity__text-body">
+                            <ul class="activity__list">
+                                <li class="activity__item">
+                                    <p class="activity__name">Положение о Почётной грамоте и Благодарственном письме Ульяновской Городской Думы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">Учётная политика для целей бюджетного учёта Ульяновской Городской Думы</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                                <li class="activity__item">
+                                    <p class="activity__name">О внесении изменений в распоряжение Главы города Ульяновска от 10.12.2015 №27 "Об учётной политике Ульяновской Городской Думы"</p>
+                                    <div class="activity__links">
+                                        <a href="#"><img src="img/blocks/download.png" title="" alt=""></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__body">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">О думе</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Структура</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Аппарат УГД</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Регламент</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">История</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Муниципальная служба</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Депутаты</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Состав думы IV созыва</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Благодарности депутатам</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Деятельность</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Решения</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Постановления</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Постановления Главы города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Распоряжения Главы города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Порядок обжалования НПА УГД</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Документы</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Очередное заседание</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">План работы на II полугодие 2022 г.</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">План работы на ноябрь 2022 г</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Противодействие коррупции</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Проекты документов</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Приемная</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Работа с обращениями граждан</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">График приема избирателей депутатами УГД в общественной приёмной</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Ульяновская региональная общественная приемная лидера партии Единая Россия Д.А. Медведева</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Комитеты</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Состав комитетов</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Работа комитетов</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Архив повесток заседаний комитетов</a></li>
+                        <li class="footer__menu-item next"><span class="title">Молодежная дума</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Новости</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Документы</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Решения</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Обратная связь</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">О городе</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Устав города Ульяновска</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Глава города Ульяновска</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Почетные граждане</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Жители, награжденные почетными грамотами</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">История</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Символика</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Генплан</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Общественная палата муниципального образования "город Ульяновск"</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Правила землепользования и застройки</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Бюджет города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Открытый бюджет</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Отчеты главы города за 2020г</a></li>
+                    </ul>
+                    <p class="footer_copyrigt">© 2022 Группа компаний HeadHunter</p>
+                </div>
+            </footer>
+        </main>
+        
+    </div>
+<!--Swiper Slider-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!--Custom scripts-->
+<script src="js/script.min.js"></script>
+</body>
+</html>

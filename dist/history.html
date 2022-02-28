@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="История думы"> 
+	<meta name="Keywords" content="История думы">
+    <title>История думы</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-block">
+            <a href="/" class="logo-block__link" rel="noopener">
+                <img src="img/logo.png" alt="Ульяновская городская дума">
+            </a>
+        </div>
+        <div class="head-block">
+            <img class="head-block__image" src="img/25year.jpg" alt="25 лет">
+            <ul class="head-block__list">
+                <li class="head-block__text">Перспективный план работы Ульяновской Городской Думы на II полугодие 2021 года</li>
+                <li class="head-block__text">Бюджет г.Ульяновска 2021-2023</li>
+                <li class="head-block__text">О мерах по реализации инициативных проектов на территории муниципального образования «город Ульяновск»</li>
+            </ul>
+            <div class="head-block__contacts">
+                <a class="head-block__telephone" href="tel:+78422413800" rel="noopener">8 (8422) 41-38-00</a>
+                <a class="head-block__email" href="mailto:duma@ugd.ru" rel="noopener">duma@ugd.ru</a>
+                <a class="head-block__twitter" href="https://twitter.com/duma73" target="_blank" rel="noreferrer">duma73</a>
+            </div>
+        </div>
+    </header>
+    <div class="site-body">
+        <div class="left-side">
+            <form action="#" method="GET">
+                <input class="left-side__search"  type="search" placeholder="Поиск по сайту">
+            </form>
+            <nav class="left-side__navigation">
+                <ul>
+                    <li><a href="history.html" rel="noopener">О Думе</a></li>
+                    <li><a href="deputats.html" rel="noopener">Депутаты</a></li>
+                    <li><a href="activity.html" rel="noopener">Деятельность</a></li>
+                    <li><a href="reception.html" rel="noopener">Приёмная</a></li>
+                    <li><a href="committees.html" rel="noopener">Комитеты</a></li>
+                    <li><a href="#" rel="noopener">Молодёжная дума</a></li>
+                    <li><a href="#" rel="noopener">О городе</a></li>
+                </ul>
+            </nav>
+            <aside class="deputat-left">
+                <img src="img/deputat/nozhechkin.jpg" alt="">
+                <span class="deputat-left__name">Ножечкин<br>Илья Владимирович</span>
+                <span class="deputat-left__position">Председатель Ульяновской<br>Городской Думы</span>
+            </aside>
+            <div class="left-side__contacts">
+                <a class="left-side__telephone" href="tel:+78422413800" rel="noopener">8 (8422) 41-38-00</a>
+                <a class="left-side__email" href="mailto:duma@ugd.ru" rel="noopener">duma@ugd.ru</a>
+                <a class="left-side__twitter" href="https://twitter.com/duma73" target="_blank" rel="noopener">duma73</a>
+            </div>
+        </div>
+    
+        <main class="main"> 
+            <section class="deputat">
+                <h1 class="deputat__name">О Думе</h1>
+            </section>
+            <section class="my-deputat deputat-page">
+                <div class="my-deputat__body">
+                    <div class="my-deputat__tab">
+                        <button class="my-deputat__link active" onclick="openTab2(event, 'history')">История</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'structure')">Структура</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'apparat')">Аппарат</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'reglament')">Регламент</button>
+                        <button class="my-deputat__link" onclick="openTab2(event, 'service')">Муниципальная служба</button>
+                    </div>
+                    <div id="history" class="my-deputat__content">
+                        <h2>История Ульяновской Городской Думы</h2>
+                        <div class="evolution__range-block">
+                            <input class="evolution__range" type="range" list="tickmarks" min="1648" max="2022" value="2000" name="range" step="1" list="tickmarks" oninput="document.querySelector('#evolution__years-start').textContent = this.value;"/>
+                            <div class="evolution__years-block" style="visibility: hidden;position: absolute;left: 0;">
+                                <span class="current-year"></span>
+                                <span id="evolution__years-start">1700</span>
+                            </div>
+                            <datalist id="tickmarks" style="width: 100%;display: flex; justify-content: space-between;">
+                                <option value="2022" label="2015-2022"></option>
+                                <option value="2010" label="2010—2015"></option>
+                                <option value="2005" label="2005—2010"></option>
+                                <option value="2001" label="2001—2005"></option>
+                                <option value="1990" label="1990—2000"></option>
+                                <option value="1917" label="1917—1990"></option>
+                                <option value="1864" label="1864—1917"></option>
+                                <option value="1648" label="XVI—XVIII в."></option>
+                            </datalist>
+                        </div>
+                        <div class="history__text-block">
+                            <p class="history__text-title">Ульяновская Городская Дума V созыва, 2015 - 2020 гг.</p>
+                            <p class="history__text-subtitle">Ульяновская Городская Дума V созыва</p>
+                            <p class="history__text">13 Сентября 2015 года состоялись выборы в Ульяновскую Городскую Думу V созыва. Выборы 30 депутатов проходили по одномандатным округам, 10 депутатов были избраны по партийным спискам. Большинство народных избранников – от партии «Единая Россия». Главой города, возглавляющим также  Городскую Думу, стал Сергей Панчин. Заместителями Главы города избраны Анатолий Васильев, Игорь Буланов, Илья Ножечкин. Также на первом заседании была утверждена новая структура Думы, согласно которой образовано 5 комитетов.</p>
+                            <p class="history__text">В мае 2018 года в связи с досрочным прекращением полномочий Главы города Ульяновска - Сергея Панчина вступили в силу правовые нормы Устава МО «город Ульяновск», предусматривающие изменения порядка избрания Главы города. Согласно новой редакции Устава Глава города избирается Городской Думой из числа кандидатов, представленных конкурсной комиссией и возглавляет городскую администрацию, а Думой руководит председатель Городской Думы, избираемый из числа депутатов. 18 Июля 2018 года на заседании Думы в результате тайного голосования единогласным решением депутатов Председателем Городской Думы выбран Илья Ножечкин.</p>
+                            <p class="history__text-title margin-top">Итоги работы профильных комитетов:</p>
+                            <p class="history__text black"><b>Комитет по социальной политике и развитию человеческого потенциала </b></p>
+                            <p class="history__text">13 Сентября 2015 года состоялись выборы в Ульяновскую Городскую Думу V созыва. Выборы 30 депутатов проходили по одномандатным округам, 10 депутатов были избраны по партийным спискам. Большинство народных избранников – от партии «Единая Россия». Главой города, возглавляющим также  Городскую Думу, стал Сергей Панчин. Заместителями Главы города избраны Анатолий Васильев, Игорь Буланов, Илья Ножечкин. Также на первом заседании была утверждена новая структура Думы, согласно которой образовано 5 комитетов.</p>
+                            <p class="history__text">В мае 2018 года в связи с досрочным прекращением полномочий Главы города Ульяновска - Сергея Панчина вступили в силу правовые нормы Устава МО «город Ульяновск», предусматривающие изменения порядка избрания Главы города. Согласно новой редакции Устава Глава города избирается Городской Думой из числа кандидатов, представленных конкурсной комиссией и возглавляет городскую администрацию, а Думой руководит председатель Городской Думы, избираемый из числа депутатов. 18 Июля 2018 года на заседании Думы в результате тайного голосования единогласным решением депутатов Председателем Городской Думы выбран Илья Ножечкин.</p>
+                            <p class="history__text margin-top black"><b>Комитет по местному самоуправлению и развитию гражданского общества, по вопросам правопорядка и противодействия коррупции</b></p>
+                            <p class="history__text">Председатель комитета: Лазарев Николай Алексеевич, заместитель председателя Ульяновской Городской Думы</p>
+                            <p class="history__text">Особое внимание Комитетом по местному самоуправлению и развитию гражданского общества, по вопросам правопорядка и противодействия коррупции Ульяновской Городской Думы уделялось проведению мероприятий направленных:</p>
+                            <p class="history__text">- на профилактику терроризма, экстремизма и обеспечения общественной безопасности (постановление «О реализации на территории муниципального образования «город Ульяновск» мер по профилактике терроризма, экстремизма и обеспечения общественной безопасности», 2015);</p>
+                            <p class="history__text">- на воспитание в обществе толерантности и правовой культуры в вопросах межнациональных и межконфессиональных отношений (постановление «О выполнении на территории муниципального образования «город Ульяновск» мероприятий, направленных на воспитание в обществе толерантности и правовой культуры в вопросах межнациональных и межконфессиональных отношений»,2016);</p>
+                            <p class="history__text">- на обеспечение кибербезопасности школьников города, в том числе с обязательным проведением уроков по информационной безопасности, информированию родителей на родительских собраниях (постановление «О повышении эффективности мер по обеспечению информационной безопасности обучающихся образовательных организаций муниципального образования «город Ульяновск», 2019. Постановление разработано с целью достижения согласованного подхода по выработке и реализации комплекса мер, направленных на защиту детей от негативной информации при использовании информационно-телекоммуникационной сети «Интернет» в образовательной организации, применения в муниципальных образовательных организациях Методических рекомендаций по ограничению в образовательных организациях доступа обучающихся к видам информации, распространяемой посредством сети «Интернет», причиняющей вред здоровью и (или) развитию детей);</p>
+                            <p class="history__text">- на развитие патриотического воспитания детей и молодёжи на территории МО «город Ульяновск» (постановление «О совершенствовании патриотического воспитания населения Ульяновской области и подготовки молодёжи к военной службе», 2019. В целях повышения качества работы по патриотическому воспитанию обучающихся и повышению их мотивации к службе Отечеству, формированию уважения к историко-культурным традициям Родины было рекомендовано увеличить количество мероприятий по патриотическому воспитанию в  муниципальных образовательных организациях города Ульяновска);</p>
+                            <p class="history__text">- на профилактику безнадзорности и правонарушений несовершеннолетних ( постановление «О профилактике безнадзорности и правонарушений несовершеннолетних на территории муниципального образования «город Ульяновск», 2020. Данное постановление направлено на своевременное выявление семейного неблагополучия, исключение формализма при исполнении возложенных обязанностей, надлежащее взаимодействие, как между органами и учреждениями системы профилактики, так и подразделениями одного и того же органа, надлежащий обмен информацией о безнадзорных детях, семьях, находящихся в социально опасном положении, несовершеннолетних, склонных к совершению правонарушений и преступлений, в том числе и после введения режима повышенной готовности  на территории муниципального образования «город Ульяновск» в 2020 году).</p>
+                        </div>
+                    </div>
+                    <div id="structure" class="my-deputat__content">
+                        <h2>Структура Ульяновской Городской Думы</h2>
+                        <div class="structure__body">
+                            <img class="structure__image" src="img/deputat/structure.jpg" alt="" title="">
+                        </div>
+                    </div>
+                    <div id="apparat" class="my-deputat__content">
+                        <h2>Структура Ульяновской Городской Думы</h2>
+                        <div class="apparat__body">
+                            <img class="apparat__image" src="img/deputat/apparat.jpg" alt="" title="">
+                        </div>
+                    </div>
+                    <div id="reglament" class="my-deputat__content">
+                        <h2>Регламент Ульяновской Городской Думы</h2>
+                        <div class="reglament__body">
+                            <p class="reglament__text right">Приложение</p>
+                            <p class="reglament__text right">к решению Ульяновской</p>
+                            <p class="reglament__text right">Городской Думы</p>
+                            <p class="reglament__text right">от 14.12.2011 № 217</p>
+                            <p class="reglament__text right">с изменениями, внесёнными решениями Ульяновской Городской Думы от 04.04.2012 № 52,</p>
+                            <p class="reglament__text right">от 23.05.2012 № 76, от 27.06.2012 № 105, от 31.10.2012 № 187, от 26.06.2013 № 78,</p>
+                            <p class="reglament__text right">от 24.06.2015 № 72, от 15.07.2015 № 81, от 14.10.2015 № 124, от 25.05.2016 № 60,</p>
+                            <p class="reglament__text right">от 31.05.2017 № 66, от 25.07.2018 № 118, от 26.06.2019 № 63, от 10.04.2020 № 40,</p>
+                            <p class="reglament__text right">от 27.05.2020 № 69, от 07.10.2020 № 10, от 15.09.2021 № 169</p>
+                            <h3 class="reglament__text title">Регламент</h3>
+                            <p class="reglament__text subtitle">Ульяновской Городской Думы</p>
+                            <p class="reglament__text">Регламент Ульяновской Городской Думы (далее – Регламент) является муниципальным нормативным правовым актом, определяющим в соответствии с Уставом муниципального образования «город Ульяновск» (далее – Устав города) порядок деятельности Ульяновской Городской Думы (далее – Городская Дума), её органов, аппарата и должностных лиц Городской Думы. </p>
+                            <p class="reglament__text">Порядок внесения в Городскую Думу проектов нормативных правовых актов определяется соответствующим решением Городской Думы.</p>
+                            <br><br><br>
+                            <p class="reglament__text subtitle left">Глава 1. Общие положения</p>
+                            <p class="reglament__text subtitle left min">Статья 1. Правовой статус Городской Думы</p>
+                            <p class="reglament__text">1. Городская Дума в соответствии с Уставом города является представительным органом муниципального образования «город Ульяновск», избранным на муниципальных выборах.  </p>
+                            <p class="reglament__text">2. Городская Дума состоит из 40 депутатов, избираемых на основе всеобщего равного и прямого избирательного права при тайном голосовании сроком на 5 лет. </p>
+                            <p class="reglament__text">3. В своей деятельности Городская Дума руководствуется Конституцией Российской Федерации, законодательством Российской Федерации, законодательными и иными правовыми актами Ульяновской области, Уставом города, иными муниципальными правовыми актами, настоящим Регламентом.</p>
+                            <p class="reglament__text subtitle left min">Статья 2. Принципы и формы работы Городской Думы</p>
+                            <p class="reglament__text">1. Деятельность Городской Думы основывается на принципах коллегиального, свободного обсуждения и решения вопросов, отнесенных к её компетенции, законности, гласности и учёта общественного мнения.</p>
+                            <p class="reglament__text">2. Основной формой работы Городской Думы являются заседания Городской Думы.</p>
+                            <p class="reglament__text">Городская Дума осуществляет свою деятельность также посредством проведения заседаний Совета Думы, мандатной комиссии Городской Думы, комитетов Городской Думы, комиссий и рабочих групп, создаваемых Городской Думой.  </p> 
+                            <p class="reglament__text">3. Городская Дума осуществляет свою деятельность в соответствии с перспективными и текущими планами работы. </p>
+                            <p class="reglament__text">Плановым периодом при перспективном планировании работы является полугодие.</p>
+                            <p class="reglament__text">Плановым периодом при текущем планировании работы является один месяц.</p>
+                            <p class="reglament__text">Проекты перспективных и текущих планов работы Городской Думы разрабатываются на основе письменных предложений Председателя Городской Думы, депутатов Городской Думы, комитетов и мандатной комиссии Городской Думы, фракций и депутатских объединений в Городской Думе (далее – фракции, депутатские объединения), структурных подразделений аппарата Городской Думы, а также определённых в Уставе города субъектов правотворческой инициативы в Городской Думе. </p>
+                            <p class="reglament__text">В проекте перспективного плана работы Городской Думы на второе полугодие может предусматриваться период, в течение которого заседания Городской Думы не проводятся (депутатские каникулы).</p>
+                            <p class="reglament__text">Письменные предложения по формированию проекта перспективного плана работы Городской Думы на первое полугодие направляются лицами, указанными в абзаце четвёртом настоящей части, в Организационно-правовое управление Городской Думы не позднее 15 декабря текущего года.</p>
+                            <p class="reglament__text">Организационно-правовое управление Городской Думы обобщает поступившие предложения и с учётом них подготавливает проект соответствующего решения Городской   Думы, который   не    позднее 20 декабря текущего года направляется Председателю Городской Думы для решения вопроса о внесении на заседание Совета Думы для предварительного рассмотрения.  </p>               
+                            <p class="reglament__text">Письменные предложения по формированию проекта перспективного плана работы Городской Думы на второе полугодие направляются лицами, указанными в абзаце четвёртом настоящей части, в Организационно-правовое управление Городской Думы не позднее 15 июня текущего года.</p>
+                        </div>
+                    </div>
+                    <div id="service" class="my-deputat__content">
+                        <h2>Муниципальная служба</h2>
+                        <div class="service__body">
+                            <button class="accordion"><span class="first">Муниципальная служба</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <button class="accordion"><span class="second">Что такое МУНИЦИПАЛЬНАЯ СЛУЖБА</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>Муниципальная служба - профессиональная деятельность граждан, которая осуществляется на постоянной основе на должностях муниципальной службы, замещаемых путем заключения трудового договора (контракта).</li>
+                                        <li>Нанимателем для муниципального служащего является муниципальное образование, от имени которого полномочия нанимателя осуществляет представитель нанимателя (работодатель).</li>
+                                        <li>Представителем нанимателя (работодателем) может быть глава муниципального образования, руководитель органа местного самоуправления, председатель избирательной комиссии муниципального образования или иное лицо, уполномоченное исполнять обязанности представителя нанимателя (работодателя).</li>
+                                    </ol>
+                                </div>
+                                <button class="accordion"><span class="second">Оснвоные квалификационные требования для замещения должностей муниципальной службы</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>...</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                                <button class="accordion"><span class="second">Ограничения, связанные с муниципальной службой</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>...</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                                <button class="accordion"><span class="second">Запреты, связанные с муниципальной службой</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>...</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                                <button class="accordion"><span class="second">Поступление на муниципальную службу</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>...</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                                <button class="accordion"><span class="second">Основания для расторжения трудового договора с муниципальным служащим</span><img class="accordion__arrow" src="img/blocks/black-arrow.png" alt="" title=""></button>
+                                <div class="panel">
+                                    <ol>
+                                        <li>...</li>
+                                        <li>...</li>
+                                        <li>...</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <button class="accordion"><span class="first">Нормативно-правовая база</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion"><span class="first">Противодействие коррупции</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion"><span class="first">Сведения о доходах и расходах</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion"><span class="first">Сведения, условия и результаты конкурсов на замещение вакантных должностей муниципальной службы</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion"><span class="first">Сведения о вакантных должностях</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <button class="accordion"><span class="first">Контактная информация</span> <img class="accordion__arrow" src="img/blocks/bley-arrow.png" alt="" title=""></button>
+                            <div class="panel">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__body">
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">О думе</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Структура</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Аппарат УГД</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Регламент</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">История</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Муниципальная служба</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Депутаты</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Состав думы IV созыва</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Благодарности депутатам</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Деятельность</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Решения</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Постановления</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Постановления Главы города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Распоряжения Главы города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Порядок обжалования НПА УГД</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Документы</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Очередное заседание</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">План работы на II полугодие 2022 г.</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">План работы на ноябрь 2022 г</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Противодействие коррупции</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Проекты документов</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Приемная</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Работа с обращениями граждан</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">График приема избирателей депутатами УГД в общественной приёмной</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Ульяновская региональная общественная приемная лидера партии Единая Россия Д.А. Медведева</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">Комитеты</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Состав комитетов</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Работа комитетов</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Архив повесток заседаний комитетов</a></li>
+                        <li class="footer__menu-item next"><span class="title">Молодежная дума</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Новости</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Документы</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Решения</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Обратная связь</a></li>
+                    </ul>
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"><span class="title">О городе</span></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Устав города Ульяновска</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Глава города Ульяновска</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Почетные граждане</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Жители, награжденные почетными грамотами</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">История</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Символика</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Генплан</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Общественная палата муниципального образования "город Ульяновск"</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Правила землепользования и застройки</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Бюджет города</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Открытый бюджет</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-link" href="#">Отчеты главы города за 2020г</a></li>
+                    </ul>
+                    <p class="footer_copyrigt">© 2022 Группа компаний HeadHunter</p>
+                </div>
+            </footer>
+        </main>
+        
+    </div>
+<!--Swiper Slider-->
+<script src="js/swiper-bundle.min.js"></script>
+
+<!--Custom scripts-->
+<script src="js/script.min.js"></script>
+</body>
+</html>
