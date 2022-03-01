@@ -90,6 +90,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #247CCD;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .logo-block img {
@@ -108,16 +111,22 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffffff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .head-block__image {
   margin-left: 25px;
   margin-right: 35px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .head-block__list {
   width: 100%;
-  max-width: 995px;
+  max-width: 990px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,6 +136,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .head-block__text {
@@ -146,6 +158,9 @@ header {
           align-items: flex-start;
   padding: 12px;
   margin: 0 40px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .head-block__contacts {
@@ -163,6 +178,9 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
   height: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .head-block__contacts a {
@@ -219,6 +237,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .left-side__search {
@@ -237,10 +258,16 @@ header {
   color: #767E86;
   padding-left: 15px;
   margin: 30px 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .left-side__navigation {
   width: 284px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .left-side__navigation ul {
@@ -277,10 +304,16 @@ header {
   position: relative;
   left: -46px;
   margin-top: 30px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .deputat-left img {
   width: 186px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .deputat-left__name {
@@ -315,6 +348,9 @@ header {
       -ms-flex-align: start;
           align-items: flex-start;
   margin-top: 60px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .left-side__contacts a {
@@ -344,12 +380,18 @@ header {
 /*main*/
 main {
   width: calc(100% - 445px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-slider {
   max-width: 1356px;
   margin-left: 0 !important;
   margin-bottom: 50px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-slider__item {
@@ -362,6 +404,9 @@ main {
   right: 0;
   width: 40%;
   height: 100%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-slider__text {
@@ -404,6 +449,9 @@ main {
   width: 100%;
   max-width: 1356px;
   margin-bottom: 80px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .content-list__tab,
@@ -462,6 +510,9 @@ main {
   background-color: #c5c5c5;
   margin-left: 35px;
   width: calc(100% - 35px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .content-list__content:first-child {
@@ -539,6 +590,9 @@ main {
 .main-video {
   width: 100%;
   max-width: 1356px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-video__title {
@@ -554,6 +608,9 @@ main {
   padding-bottom: 56.25%;
   background-color: #000000;
   margin-left: 35px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-video__media {
@@ -642,6 +699,9 @@ main {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .evolution__ranges {
@@ -827,8 +887,6 @@ input[type=range]:focus::-ms-fill-upper {
           align-items: center;
   width: 48%;
   height: 49px;
-  left: 1140px;
-  top: 2455px;
   border: 1px solid #247CCD;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -836,6 +894,9 @@ input[type=range]:focus::-ms-fill-upper {
   font-size: 18px;
   color: #247CCD;
   background-color: transparent;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .opacity__block {
@@ -1028,6 +1089,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
 }
 
 .my-deputat__name:hover {
@@ -1039,6 +1101,8 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .my-deputat__post:hover {
@@ -1565,7 +1629,9 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 /*Страница Депутаты*/
-.deputat-page .my-deputat__tab {
+.deputat-page .my-deputat__tab,
+.reception-page .my-deputat__tab,
+.committees-page .my-deputat__tab {
   width: 100%;
   margin-left: 35px;
   margin-bottom: 35px;
@@ -1581,7 +1647,9 @@ input[type=range]:focus::-ms-fill-upper {
           align-items: center;
 }
 
-.deputat-page .my-deputat__link::after {
+.deputat-page .my-deputat__link::after,
+.reception-page .my-deputat__link::after,
+.committees-page .my-deputat__link::after {
   content: url("../img/deputat/line.png");
   margin-left: 25px;
   position: relative;
@@ -1622,6 +1690,9 @@ input[type=range]:focus::-ms-fill-upper {
   position: relative;
   bottom: 45px;
   left: 40px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .history__text-block {
@@ -1742,9 +1813,9 @@ input[type=range]:focus::-ms-fill-upper {
   text-align: left;
   outline: none;
   font-size: 15px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2580,6 +2651,9 @@ input[type=range]:focus::-ms-fill-upper {
 
   .my-deputat__image {
     width: 170px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
   }
 
   .main-slider {
@@ -2678,6 +2752,10 @@ input[type=range]:focus::-ms-fill-upper {
 
   .main-slider {
     max-width: 1020px;
+  }
+
+  .main-slider__info {
+    width: 43%;
   }
 
   .content-list {
@@ -2849,5 +2927,576 @@ input[type=range]:focus::-ms-fill-upper {
 
   .table__title-col.time img {
     width: 360px;
+  }
+
+  .main-slider__info {
+    width: 44%;
+  }
+}
+@media (max-width: 1199px) {
+  .logo-block img {
+    width: 160px;
+  }
+
+  .logo-block {
+    width: 220px;
+  }
+
+  .head-block {
+    width: calc(100% - 220px);
+  }
+
+  .head-block__image {
+    width: 80px;
+    margin-right: 20px;
+  }
+
+  .head-block__text {
+    margin: 0px 5px;
+    font-size: 12px;
+  }
+
+  .head-block__list {
+    max-width: 500px;
+  }
+
+  .head-block__contacts a {
+    font-size: 16px;
+  }
+
+  .left-side {
+    width: 220px;
+  }
+
+  .left-side__search {
+    width: 200px;
+  }
+
+  .left-side__navigation {
+    width: 200px;
+  }
+
+  .deputat-left img {
+    width: 170px;
+  }
+
+  .left-side__contacts {
+    width: 200px;
+  }
+
+  main {
+    width: calc(100% - 220px);
+  }
+
+  .main-slider {
+    margin-bottom: 30px;
+  }
+
+  .main-slider__info {
+    width: 45%;
+  }
+
+  .main-slider__text {
+    font-size: 36px;
+  }
+
+  .content-list__tab button:first-child,
+.my-deputat__tab button:first-child {
+    margin-left: 20px;
+  }
+
+  .news-list {
+    margin-left: 20px;
+  }
+
+  .news-list__link {
+    font-size: 16px;
+  }
+
+  .news-list__title {
+    font-size: 14px;
+  }
+
+  #advertising, #invitation {
+    margin-left: 20px;
+  }
+
+  .main-video__title {
+    margin-left: 20px;
+  }
+
+  .main-video__block {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
+
+  .evlution__title {
+    margin-left: 20px;
+  }
+
+  .evolution__body {
+    width: calc(100% - 20px);
+    margin-left: 20px;
+  }
+
+  .evolution__range-block,
+.history__range-block {
+    width: 48%;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    height: 30px;
+    width: 20px;
+    background: #EFF7FC;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(59, 120, 175, 0.62), inset 0px 0px 2px 1px #FFFFFF, inset 0px 0px 8px rgba(112, 138, 186, 0.3);
+            box-shadow: 0px 0px 4px 1px rgba(59, 120, 175, 0.62), inset 0px 0px 2px 1px #FFFFFF, inset 0px 0px 8px rgba(112, 138, 186, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -13px;
+  }
+
+  .evolution__years-block span,
+.opacity__years-block span,
+.history__years-block span {
+    font-size: 16px;
+  }
+
+  .history__title {
+    margin-left: 20px;
+  }
+
+  .history .history__range-block {
+    width: calc(100% - 30px);
+    margin-left: 20px;
+  }
+
+  .history__body {
+    width: calc(100% - 40px);
+    margin-left: 30px;
+  }
+
+  .history__year {
+    font-size: 52px;
+    left: -25px;
+  }
+
+  .history__name {
+    margin-bottom: 10px;
+  }
+
+  .history__text {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .my-deputat__title {
+    margin-left: 20px;
+  }
+
+  .my-deputat__content {
+    margin-left: 20px;
+  }
+
+  .my-deputat__image {
+    width: 125px;
+  }
+
+  .all-deputats {
+    width: 96%;
+  }
+
+  .footer {
+    padding-top: 20px;
+  }
+
+  .footer__body {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .footer__menu-link {
+    font-size: 12px;
+  }
+
+  .footer__menu-item {
+    margin-bottom: 15px;
+  }
+
+  .footer_copyrigt {
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+
+  /*О Думе*/
+  .deputat {
+    margin-left: 20px;
+  }
+
+  .deputat-page .my-deputat__tab {
+    margin-left: 20px;
+  }
+
+  .content-list__tab button,
+.my-deputat__tab button {
+    margin: 10px;
+  }
+
+  .content-list__tab button:first-child,
+.my-deputat__tab button:first-child {
+    margin-left: 10px;
+  }
+
+  .content-list__tab button, .my-deputat__tab button {
+    font-size: 16px;
+  }
+
+  .deputat-page .my-deputat__link::after {
+    margin-left: 15px;
+  }
+
+  #tickmarks option {
+    font-size: 14px;
+  }
+
+  #tickmarks option::after {
+    height: 20px;
+    bottom: 47px;
+  }
+
+  /*Депутаты*/
+  .my-deputat__tab button.active {
+    font-size: 20px;
+  }
+
+  .deputat-page .my-deputat__item {
+    width: 15%;
+    margin-bottom: 1%;
+  }
+
+  .deputat-page .my-deputat__image {
+    width: 120px;
+  }
+
+  .my-deputat__image {
+    margin-bottom: 0px;
+  }
+
+  .my-deputat__post {
+    display: block;
+    height: 55px;
+  }
+
+  /*Деятельность*/
+  #decision #tickmarks option::after {
+    bottom: 45px;
+  }
+
+  .activity__name {
+    font-size: 16px;
+  }
+
+  /*Приёмная*/
+  .my-deputat.reception-page .my-deputat__tab button {
+    font-size: 15px;
+    width: 48%;
+  }
+
+  .reception-page .my-deputat__tab.activity button {
+    width: 99%;
+    margin: 5px;
+  }
+
+  .reception-page .my-deputat__link::after {
+    margin-left: 3px;
+  }
+
+  .reception-page .my-deputat__tab {
+    margin-left: 20px;
+  }
+
+  .reception__form-title {
+    font-size: 16px;
+  }
+
+  .reception__helper-name {
+    font-size: 16px;
+  }
+
+  .reception__helper-name {
+    margin-left: 10px;
+  }
+
+  .reception__helper-info-block {
+    margin-left: 10px;
+  }
+
+  .reception__picture {
+    width: 90px;
+    height: 90px;
+  }
+
+  .reception__contacts {
+    width: calc(100% - 110px);
+    margin-bottom: 50px;
+  }
+
+  /*комитеты*/
+  .committees-page .my-deputat__tab {
+    margin-left: 20px;
+  }
+
+  .committees-page .my-deputat__link::after {
+    margin-left: 10px;
+  }
+
+  .structure-committees__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .structure-committees__item {
+    width: 17%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .menu__arrow {
+    position: absolute;
+    top: 0px;
+    right: -39px;
+    padding: 5px;
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    display: block;
+  }
+
+  .menu__arrow img {
+    width: 30px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .left-side {
+    position: absolute;
+    left: -220px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 1;
+    -webkit-box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .left-side.active {
+    top: 0px;
+    left: 0;
+  }
+
+  .left-side.active .menu__arrow img {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  .logo-block {
+    width: 170px;
+  }
+
+  .head-block {
+    width: calc(100% - 170px);
+  }
+
+  .logo-block img {
+    width: 140px;
+  }
+
+  .site-body {
+    position: relative;
+  }
+
+  main {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+
+  .main-slider {
+    max-width: 993px;
+  }
+
+  .main-slider__info {
+    width: 40%;
+  }
+
+  .content-list__tab button:first-child,
+.my-deputat__tab button:first-child {
+    margin-left: 20px;
+  }
+
+  .content-list {
+    max-width: 993px;
+    margin-bottom: 0px;
+  }
+
+  .content-list__content,
+.my-deputat__content {
+    width: 98%;
+  }
+
+  .opacity__button {
+    width: 58%;
+  }
+
+  .opacity__block {
+    width: 40%;
+  }
+
+  .evolution-map {
+    width: 99%;
+  }
+
+  /*Дума*/
+  .my-deputat__body {
+    width: 100%;
+  }
+
+  .deputat-page .my-deputat__tab {
+    margin-left: 7px;
+  }
+
+  #history .evolution__range-block {
+    width: 98%;
+  }
+
+  /*Деятельность*/
+}
+@media (max-width: 992px) {
+  header {
+    height: 100px;
+  }
+
+  .logo-block {
+    width: 120px;
+  }
+
+  .logo-block img {
+    width: 100px;
+  }
+
+  .head-block {
+    width: calc(100% - 100px);
+  }
+
+  .head-block__image {
+    display: none;
+  }
+
+  .head-block__list {
+    max-width: 460px;
+  }
+
+  .head-block__text {
+    margin: 0px;
+    font-size: 10px;
+    height: 55px;
+    min-height: 50px;
+    border-left: 0px;
+    border-right: 2px solid #247CCD;
+    padding: 10px;
+  }
+
+  .head-block__contacts {
+    margin-left: 10px;
+  }
+
+  .head-block__contacts a {
+    padding: 2px;
+  }
+
+  .main-slider__info {
+    width: 47%;
+  }
+
+  .main-slider__text {
+    color: #247CCD;
+    -webkit-text-stroke: 1px #000000;
+  }
+
+  .main-video__title {
+    font-size: 38px;
+  }
+
+  .main-video__block {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  .evlution__title {
+    margin-left: 10px;
+  }
+
+  .evolution__body {
+    margin-left: 10px;
+  }
+
+  .history__title {
+    margin-left: 10px;
+  }
+
+  .history .history__range-block {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  .history {
+    width: 98%;
+  }
+
+  .history__body {
+    width: calc(100% - 60px);
+    margin-left: 35px;
+  }
+
+  .content-list__content, .my-deputat__content {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+
+  .my-deputat__image {
+    width: 120px;
+  }
+
+  .footer__menu {
+    width: 15%;
+    margin: 5px;
+  }
+
+  .all-deputats {
+    width: 98%;
+  }
+
+  /*О Думе*/
+  .deputat-page .my-deputat__tab {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  /*Приемная*/
+  .reception-page .my-deputat__tab {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+  }
+
+  .my-deputat__tab.activity button {
+    margin: 10px;
   }
 }
