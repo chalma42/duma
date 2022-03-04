@@ -76,6 +76,11 @@ header {
       -ms-flex-align: stretch;
           align-items: stretch;
   height: 130px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 .logo-block {
@@ -161,6 +166,13 @@ header {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
+.head-block__text:hover {
+  color: blue;
 }
 
 .head-block__contacts {
@@ -218,6 +230,7 @@ header {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  margin-top: 130px;
 }
 
 /*Левая сторона*/
@@ -247,6 +260,7 @@ header {
 }
 
 .left-side__search {
+  display: none;
   width: 284px;
   height: 42px;
   background: #F3F9FF;
@@ -268,6 +282,7 @@ header {
 }
 
 .left-side__navigation {
+  margin-top: 30px;
   width: 284px;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -511,7 +526,7 @@ main {
 
 #advertising,
 #invitation {
-  background-color: #c5c5c5;
+  /*background-color: #c5c5c5;*/
   margin-left: 35px;
   width: calc(100% - 35px);
   -webkit-transition: all 0.3s;
@@ -665,9 +680,8 @@ main {
 .evolution {
   width: 100%;
   max-width: 1356px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -929,13 +943,11 @@ input[type=range]:focus::-ms-fill-upper {
   width: 100%;
 }
 
-/*конец main*/
 .history {
   width: 100%;
   max-width: 1356px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /*display: flex;*/
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1024,6 +1036,7 @@ input[type=range]:focus::-ms-fill-upper {
 .my-deputat__form {
   width: 100%;
   margin-bottom: 35px;
+  display: none;
 }
 
 .my-deputat__form input[type=search] {
@@ -2434,6 +2447,7 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 12px;
 }
 
+/*конец main*/
 /*конец тела сайта*/
 /*Футер*/
 .footer {
@@ -2534,7 +2548,7 @@ input[type=range]:focus::-ms-fill-upper {
   padding-top: 20px;
   /* Расположение коробки */
   left: 0;
-  top: 0;
+  top: 130px;
   width: 100%;
   /* Полная ширина */
   height: 100%;
