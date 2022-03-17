@@ -17,7 +17,8 @@ body {
     font-family: Roboto;
     font-style: normal;
     color: #000000;
-    background: #F2F6F8;
+    /*background: #F2F6F8;*/
+    background: green;
 }
 h2 {
     color: #247CCD;
@@ -48,6 +49,9 @@ p {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
 }
+:root {
+    --swiper-navigation-size: 30px !important;
+}
 /*Хедер*/
 header {
     display: flex;
@@ -68,8 +72,9 @@ header {
     background-color: #247CCD;
     transition: all .3s;
 }
-.logo-block img {
-    width: auto;
+.logo-block__link img {
+    width: 100%;
+    max-width: 210px;
 }
 .head-block {
     width: calc(100% - 445px);
@@ -85,12 +90,17 @@ header {
     transition: all .3s;
 }
 .head-block__list {
+    border: 1px solid red;
     width: 100%;
-    max-width: 990px;
+    max-width: 1160px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: all .3s;
+}
+.swiper.head-block__list {
+    margin-left: inherit;
+    margin-right: inherit;
 }
 .head-block__text {
     max-width: 230px;
@@ -112,6 +122,7 @@ header {
     color: blue;
 }
 .head-block__contacts {
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1841,14 +1852,12 @@ input[type=range]:focus::-ms-fill-upper {
     main {
         width: calc(100% - 350px);
     }
-    .head-block__list {
-        max-width: 980px;
-    }
+
     
 }
 @media (max-width: 1699px) {
     .head-block__list {
-        max-width: 885px;
+        max-width: 990px;
     }
     .my-deputat__item {
         padding: 20px;
@@ -1898,7 +1907,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 @media (max-width: 1599px) {
     .head-block__list {
-        max-width: 785px;
+        max-width: 910px;
     }
     .main-slider {
         max-width: 1100px;
@@ -1921,7 +1930,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 @media (max-width: 1499px) {
     .head-block__list {
-        max-width: 686px;
+        max-width: 830px;
     }
     .head-block__image {
         width: 100px;
@@ -1969,8 +1978,14 @@ input[type=range]:focus::-ms-fill-upper {
     .logo-block {
         width: 300px;
     }
-    .logo-block img {
-        width: 220px;
+    .head-block__list {
+        max-width: 791px;
+    }
+    .logo-block__link img {
+        width: 160px;
+    }
+    .logo-block__image {
+        width: 60px;
     }
     .head-block {
         width: calc(100% - 300px);
@@ -1992,9 +2007,6 @@ input[type=range]:focus::-ms-fill-upper {
     }
     .left-side__contacts {
         width: 270px;
-    }
-    .head-block__list {
-        max-width: 655px;
     }
     .head-block__image {
         width: 90px;
@@ -2074,11 +2086,14 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 @media (max-width: 1199px) {
-    .logo-block img {
-        width: 160px;
-    }
     .logo-block {
         width: 220px;
+    }
+    .logo-block__link img {
+        width: 130px;
+    }
+    .logo-block__image {
+        width: 45px;
     }
     .head-block {
         width: calc(100% - 220px);
@@ -2335,6 +2350,13 @@ input[type=range]:focus::-ms-fill-upper {
     }
 }
 @media (max-width: 1024px) {
+    .logo-block {
+        width: 210px;
+    }
+    .head-block {
+        width: calc(100% - 210px);
+    }
+
     .menu__arrow {
         display: block;
         position: absolute;
@@ -2363,15 +2385,6 @@ input[type=range]:focus::-ms-fill-upper {
     }
     .left-side.active .menu__arrow img {
         transform: rotate(0deg);
-    }
-    .logo-block {
-        width: 170px;
-    }
-    .head-block {
-        width: calc(100% - 170px);
-    }
-    .logo-block img {
-        width: 140px;
     }
     .site-body {
         position: relative;
@@ -2426,16 +2439,16 @@ input[type=range]:focus::-ms-fill-upper {
         height: 100px;
     }
     .logo-block {
-        width: 120px;
-    }
-    .logo-block img {
-        width: 100px;
+        width: 190px;
     }
     .head-block {
-        width: calc(100% - 100px);
+        width: calc(100% - 190px);
     }
-    .head-block__image {
-        display: none;
+    .logo-block__link img {
+        width: 130px;
+    }
+    .logo-block__image {
+        width: 40px;
     }
     .head-block__list {
         max-width: 460px;

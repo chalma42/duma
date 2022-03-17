@@ -26,6 +26,15 @@ const swiper2 = new Swiper('.deputat-slider', {
   },
   spaceBetween: 15,
 });
+const swiper3 = new Swiper('.head-block__list', {
+  // Default parameters
+  slidesPerView: 3,
+  autoplay: false,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
   
 //Открываем вкладку новости по умолчанию
 const news = document.querySelector('#news');
