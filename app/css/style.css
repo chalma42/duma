@@ -18,8 +18,7 @@ body {
   font-family: Roboto;
   font-style: normal;
   color: #000000;
-  /*background: #F2F6F8;*/
-  background: green;
+  background: #F2F6F8;
 }
 
 h2 {
@@ -50,6 +49,7 @@ p {
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
 }
+
 
 .sr-only {
   position: absolute;
@@ -136,7 +136,6 @@ header {
 }
 
 .head-block__list {
-  border: 1px solid red;
   width: 100%;
   max-width: 1160px;
   display: -webkit-box;
@@ -160,6 +159,7 @@ header {
 
 .head-block__text {
   max-width: 230px;
+  height: 100%;
   font-size: 14px;
   line-height: 16px;
   border-left: 2px solid #247CCD;
@@ -188,7 +188,6 @@ header {
 }
 
 .head-block__contacts {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1097,6 +1096,8 @@ input[type=range]:focus::-ms-fill-upper {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-box-sizing: content-box !important;
+   box-sizing: content-box !important;
 }
 
 .my-deputat__item:hover {
